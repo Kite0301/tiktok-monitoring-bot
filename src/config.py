@@ -11,6 +11,7 @@ class Config:
     accounts: list[str]
     slack_webhook_url: str
     state_file_path: str = "data/state.json"
+    ephemeral_file_path: str = "data/ephemeral.json"
     analytics_delay_hours: int = 24
     max_analytics_retries: int = 3
     max_completed_history: int = 200
@@ -44,9 +45,11 @@ def load_config() -> Config:
         raise ValueError("SLACK_WEBHOOK_URL environment variable is not set")
 
     state_file_path = str(project_root / "data" / "state.json")
+    ephemeral_file_path = str(project_root / "data" / "ephemeral.json")
 
     return Config(
         accounts=accounts,
         slack_webhook_url=slack_webhook_url,
         state_file_path=state_file_path,
+        ephemeral_file_path=ephemeral_file_path,
     )

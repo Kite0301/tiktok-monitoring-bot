@@ -1,8 +1,15 @@
-"""Manage reading and writing of data/state.json."""
+"""Manage reading and writing of data/state.json (persistent state).
+
+Persistent state only contains data that changes meaningfully:
+- known_video_ids per account
+- pending_analytics jobs
+- completed_analytics history
+
+Timestamps and failure counters live in ephemeral state (cache_manager.py).
+"""
 
 import json
 import logging
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -16,7 +23,6 @@ def _default_state() -> State:
     """Return a fresh empty state."""
     return {
         "version": 1,
-        "last_updated": None,
         "accounts": {},
         "pending_analytics": [],
         "completed_analytics": [],
@@ -57,11 +63,9 @@ def load_state(path: str) -> State:
 def save_state(state: State, path: str, max_completed: int = 200) -> None:
     """Write state to JSON file.
 
-    Updates last_updated timestamp and prunes completed_analytics if over the
-    max_completed limit.
+    Prunes completed_analytics if over the max_completed limit.
+    Does NOT include timestamps (those belong in ephemeral state).
     """
-    state["last_updated"] = datetime.now(timezone.utc).isoformat()
-
     # Prune old completed analytics
     completed = state.get("completed_analytics", [])
     if len(completed) > max_completed:
@@ -79,3 +83,14 @@ def save_state(state: State, path: str, max_completed: int = 200) -> None:
 def serialize_state(state: State) -> str:
     """Deterministic JSON serialization for change detection."""
     return json.dumps(state, sort_keys=True, ensure_ascii=False)
+
+
+def has_meaningful_change(old_snapshot: str, new_snapshot: str) -> bool:
+    """Compare two state snapshots to determine if a git commit is needed.
+
+    Returns True if the persistent state has meaningfully changed, i.e.:
+    - known_video_ids changed (new posts detected)
+    - pending_analytics changed (new jobs added or jobs moved/removed)
+    - completed_analytics changed (analytics collected or retries exhausted)
+    """
+    return old_snapshot != new_snapshot

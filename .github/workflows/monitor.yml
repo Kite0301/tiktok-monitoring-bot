@@ -32,6 +32,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Restore ephemeral state from cache
+        uses: actions/cache@v4
+        with:
+          path: data/ephemeral.json
+          key: ephemeral-state
+
       - name: Pull latest changes
         run: git pull --rebase origin main
 
@@ -39,3 +45,10 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: python src/monitor.py
+
+      - name: Save ephemeral state to cache
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: data/ephemeral.json
+          key: ephemeral-state

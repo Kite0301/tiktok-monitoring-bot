@@ -3,6 +3,10 @@
 Checks pending_analytics for due items, collects metrics via yt-dlp,
 and sends Slack notifications with the results.
 
+Uses 2-layer storage:
+- Persistent state (data/state.json, git): pending/completed analytics
+- Ephemeral state (data/ephemeral.json, Actions cache): timestamps only
+
 Exit codes:
     0 = Success
     1 = Unrecoverable error
@@ -17,9 +21,15 @@ from pathlib import Path
 # Add src/ to path for imports
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from cache_manager import load_ephemeral, save_ephemeral
 from config import load_config
 from slack_notifier import SlackNotifier
-from state_manager import load_state, save_state, serialize_state
+from state_manager import (
+    has_meaningful_change,
+    load_state,
+    save_state,
+    serialize_state,
+)
 from tiktok_client import TikTokClient, TikTokClientError
 
 logging.basicConfig(
@@ -66,6 +76,7 @@ def main() -> int:
 
     state = load_state(config.state_file_path)
     original_snapshot = serialize_state(state)
+    ephemeral = load_ephemeral(config.ephemeral_file_path)
     notifier = SlackNotifier(config.slack_webhook_url)
     client = TikTokClient()
     now = datetime.now(timezone.utc)
@@ -145,9 +156,9 @@ def main() -> int:
                 )
                 try:
                     notifier.notify_error(
-                        f"\u52d5\u753b {job['video_id']} ({job['username']}) \u306e\u5206\u6790\u30c7\u30fc\u30bf\u53d6\u5f97\u306b"
-                        f"\u5931\u6557\u3057\u307e\u3057\u305f\uff08{config.max_analytics_retries}\u56de\u30ea\u30c8\u30e9\u30a4\u6e08\u307f\uff09\u3002"
-                        f"\u52d5\u753b\u304c\u524a\u9664\u3055\u308c\u305f\u53ef\u80fd\u6027\u304c\u3042\u308a\u307e\u3059\u3002"
+                        f"動画 {job['video_id']} ({job['username']}) の分析データ取得に"
+                        f"失敗しました（{config.max_analytics_retries}回リトライ済み）。"
+                        f"動画が削除された可能性があります。"
                     )
                 except Exception:
                     pass
@@ -160,11 +171,14 @@ def main() -> int:
     # Prune completed history
     completed = state.get("completed_analytics", [])
     if len(completed) > config.max_completed_history:
-        state["completed_analytics"] = completed[-config.max_completed_history :]
+        state["completed_analytics"] = completed[-config.max_completed_history:]
 
-    # Only save and commit if state actually changed
+    # Always save ephemeral state — NOT committed to git
+    save_ephemeral(ephemeral, config.ephemeral_file_path)
+
+    # Only save and commit persistent state if meaningfully changed
     new_snapshot = serialize_state(state)
-    if new_snapshot != original_snapshot:
+    if has_meaningful_change(original_snapshot, new_snapshot):
         save_state(state, config.state_file_path, config.max_completed_history)
         try:
             git_commit_and_push("Update state: analytics collected")
