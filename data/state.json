@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "last_updated": "2026-02-20T17:39:11.548194+00:00",
+  "last_updated": "2026-02-20T17:56:55.935720+00:00",
   "accounts": {
     "@kt.umaimon": {
-      "last_checked": "2026-02-20T17:39:08.542240+00:00",
+      "last_checked": "2026-02-20T17:56:52.320481+00:00",
       "last_check_success": true,
       "consecutive_failures": 0,
       "known_video_ids": [
@@ -11,7 +11,7 @@
       ]
     },
     "@shinjukujohnny": {
-      "last_checked": "2026-02-20T17:39:08.542240+00:00",
+      "last_checked": "2026-02-20T17:56:52.320481+00:00",
       "last_check_success": true,
       "consecutive_failures": 0,
       "known_video_ids": [
@@ -48,7 +48,7 @@
       ]
     },
     "@naokijiro": {
-      "last_checked": "2026-02-20T17:39:08.542240+00:00",
+      "last_checked": "2026-02-20T17:56:52.320481+00:00",
       "last_check_success": true,
       "consecutive_failures": 0,
       "known_video_ids": [
