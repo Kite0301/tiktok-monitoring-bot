@@ -3,7 +3,8 @@
   "accounts": {
     "@kt.umaimon": {
       "known_video_ids": [
-        "7608518079550590229"
+        "7608518079550590229",
+        "7609344313792679188"
       ]
     },
     "@naokijiro": {
@@ -42,10 +43,40 @@
         "7604483027149802768",
         "7604449693204040977",
         "7604446506254454033",
-        "7604123867182861569"
+        "7604123867182861569",
+        "7607855006565403905",
+        "7599192266489548040"
       ]
     }
   },
-  "pending_analytics": [],
+  "pending_analytics": [
+    {
+      "video_id": "7609344313792679188",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7609344313792679188",
+      "detected_at": "2026-02-21T22:06:48.134681+00:00",
+      "analytics_due_at": "2026-02-22T22:06:48.134681+00:00",
+      "title": "春だけの限定どん兵衛🌸美味しかったのでオススメ！ #どん兵衛 #春 #ランチ #蕎麦 #美味しい ",
+      "retry_count": 0
+    },
+    {
+      "video_id": "7607855006565403905",
+      "username": "@shinjukujohnny",
+      "video_url": "https://www.tiktok.com/@shinjukujohnny/video/7607855006565403905",
+      "detected_at": "2026-02-21T22:06:48.134681+00:00",
+      "analytics_due_at": "2026-02-22T22:06:48.134681+00:00",
+      "title": "#美女図鑑 #ダンス #ギャル",
+      "retry_count": 0
+    },
+    {
+      "video_id": "7599192266489548040",
+      "username": "@shinjukujohnny",
+      "video_url": "https://www.tiktok.com/@shinjukujohnny/video/7599192266489548040",
+      "detected_at": "2026-02-21T22:06:48.134681+00:00",
+      "analytics_due_at": "2026-02-22T22:06:48.134681+00:00",
+      "title": "#ギャル #美女図鑑 ",
+      "retry_count": 0
+    }
+  ],
   "completed_analytics": []
 }
