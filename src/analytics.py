@@ -15,7 +15,7 @@ Exit codes:
 import logging
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 # Add src/ to path for imports
@@ -31,6 +31,15 @@ from state_manager import (
     serialize_state,
 )
 from tiktok_client import TikTokClient, TikTokClientError
+
+JST = timezone(timedelta(hours=9))
+
+
+def _format_detected_at_jst(iso_str: str) -> str:
+    """Convert an ISO 8601 UTC timestamp to JST display string."""
+    dt = datetime.fromisoformat(iso_str)
+    return dt.astimezone(JST).strftime("%Y-%m-%d %H:%M JST")
+
 
 logging.basicConfig(
     level=logging.INFO,
@@ -118,7 +127,7 @@ def main() -> int:
                     username=job["username"],
                     video_url=job["video_url"],
                     title=job["title"],
-                    detected_at=job["detected_at"],
+                    detected_at=_format_detected_at_jst(job["detected_at"]),
                     view_count=analytics.view_count,
                     like_count=analytics.like_count,
                     comment_count=analytics.comment_count,

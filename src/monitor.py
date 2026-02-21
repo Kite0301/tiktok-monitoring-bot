@@ -32,6 +32,8 @@ from state_manager import (
 )
 from tiktok_client import AccountNotFoundError, TikTokClient, TikTokClientError
 
+JST = timezone(timedelta(hours=9))
+
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
@@ -137,7 +139,7 @@ def main() -> int:
                             video_id=video.video_id,
                             video_url=video.url,
                             title=video.title,
-                            detected_at=now.strftime("%Y-%m-%d %H:%M UTC"),
+                            detected_at=now.astimezone(JST).strftime("%Y-%m-%d %H:%M JST"),
                         )
                     except Exception as e:
                         logger.error(f"Slack notification failed: {e}")
