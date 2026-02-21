@@ -190,6 +190,56 @@ class SlackNotifier:
         }
         self._send(payload)
 
+    def notify_weekly_report(self, accounts: list[str]) -> None:
+        """Send a weekly operational status report in Japanese."""
+        account_list = "\n".join(f"• {a}" for a in accounts)
+        payload = {
+            "text": "週次レポート: TikTokモニタリングBot 稼働状況",
+            "blocks": [
+                {
+                    "type": "header",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "📋 TikTokモニタリングBot 週次レポート",
+                        "emoji": True,
+                    },
+                },
+                {
+                    "type": "section",
+                    "text": {
+                        "type": "mrkdwn",
+                        "text": (
+                            "このBotは、登録されているTikTokアカウントの投稿を検知し、"
+                            "投稿時にSlackへ通知を行います。"
+                        ),
+                    },
+                },
+                {
+                    "type": "section",
+                    "text": {
+                        "type": "mrkdwn",
+                        "text": (
+                            "投稿から24時間経過後に、その動画のパフォーマンス"
+                            "（再生回数・いいね数・コメント数・シェア数・保存数）を"
+                            "再度通知します。"
+                        ),
+                    },
+                },
+                {"type": "divider"},
+                {
+                    "type": "section",
+                    "text": {
+                        "type": "mrkdwn",
+                        "text": (
+                            "*現在登録されているアカウントはこちらです:*\n"
+                            f"{account_list}"
+                        ),
+                    },
+                },
+            ],
+        }
+        self._send(payload)
+
     def notify_error(self, message: str) -> None:
         """Send an error alert to Slack."""
         payload = {
