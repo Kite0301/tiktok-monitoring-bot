@@ -15,17 +15,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7609734941353561364",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7609734941353561364",
-      "detected_at": "2026-02-22T22:00:25.427517+00:00",
-      "analytics_due_at": "2026-02-23T22:00:25.427517+00:00",
-      "title": "うますぎてリピ確💚🩷 #お菓子 #抹茶 #ポッキー #バレンタイン ",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -49,6 +39,19 @@
       "analytics_collected_at": "2026-02-23T11:10:31.371765+00:00",
       "view_count": 305,
       "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7609734941353561364",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7609734941353561364",
+      "title": "うますぎてリピ確💚🩷 #お菓子 #抹茶 #ポッキー #バレンタイン ",
+      "detected_at": "2026-02-22T22:00:25.427517+00:00",
+      "analytics_collected_at": "2026-02-23T22:06:39.297502+00:00",
+      "view_count": 394,
+      "like_count": 5,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
