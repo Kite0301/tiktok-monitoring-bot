@@ -22,15 +22,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7610399840723389697",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7610399840723389697",
-      "detected_at": "2026-02-24T22:02:40.075986+00:00",
-      "analytics_due_at": "2026-02-25T22:02:40.075986+00:00",
-      "title": "おいし～い焼き菓子🥧アンリ・シャルパンティエの# 高級感たっぷりでサクっふわっで幸せー #ガトー・キュイ・アソート #焼き菓子 #焼き菓子...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7610742693794336020",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7610742693794336020",
@@ -111,6 +102,19 @@
       "analytics_collected_at": "2026-02-25T11:30:11.448841+00:00",
       "view_count": 286,
       "like_count": 5,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7610399840723389697",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7610399840723389697",
+      "title": "おいし～い焼き菓子🥧アンリ・シャルパンティエの# 高級感たっぷりでサクっふわっで幸せー #ガトー・キュイ・アソート #焼き菓子 #焼き菓子...",
+      "detected_at": "2026-02-24T22:02:40.075986+00:00",
+      "analytics_collected_at": "2026-02-25T22:06:26.860763+00:00",
+      "view_count": 193,
+      "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
