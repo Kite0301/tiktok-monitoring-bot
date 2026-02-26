@@ -22,15 +22,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7610742693794336020",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7610742693794336020",
-      "detected_at": "2026-02-25T10:26:58.529568+00:00",
-      "analytics_due_at": "2026-02-26T10:26:58.529568+00:00",
-      "title": "ギフトにぴったりなカルディのコーヒーのご紹介🌸 #コーヒー #カルディ #ギフト ",
-      "retry_count": 0
-    },
-    {
       "video_id": "7610401010904730896",
       "username": "@naokijiro",
       "video_url": "https://www.tiktok.com/@naokijiro/video/7610401010904730896",
@@ -118,6 +109,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7610742693794336020",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7610742693794336020",
+      "title": "ギフトにぴったりなカルディのコーヒーのご紹介🌸 #コーヒー #カルディ #ギフト ",
+      "detected_at": "2026-02-25T10:26:58.529568+00:00",
+      "analytics_collected_at": "2026-02-26T10:43:03.231445+00:00",
+      "view_count": 426,
+      "like_count": 3,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
