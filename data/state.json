@@ -24,15 +24,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7610401010904730896",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7610401010904730896",
-      "detected_at": "2026-02-25T22:02:56.997958+00:00",
-      "analytics_due_at": "2026-02-26T22:02:56.997958+00:00",
-      "title": "ご褒美タイムに幸せをお届けー☺️ 高級感あってしっとり美味しいカヌレだよ！💓食べてみて💓 #ジュエル・ド・カヌレ #贈答用 #ご褒美",
-      "retry_count": 0
-    },
-    {
       "video_id": "7611124710625152277",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7611124710625152277",
@@ -142,6 +133,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7610401010904730896",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7610401010904730896",
+      "title": "ご褒美タイムに幸せをお届けー☺️ 高級感あってしっとり美味しいカヌレだよ！💓食べてみて💓 #ジュエル・ド・カヌレ #贈答用 #ご褒美",
+      "detected_at": "2026-02-25T22:02:56.997958+00:00",
+      "analytics_collected_at": "2026-02-26T22:18:02.081206+00:00",
+      "view_count": 345,
+      "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
