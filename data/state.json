@@ -24,15 +24,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7611124710625152277",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7611124710625152277",
-      "detected_at": "2026-02-26T11:00:13.047020+00:00",
-      "analytics_due_at": "2026-02-27T11:00:13.047020+00:00",
-      "title": "一番お気に入りのグミ！ #グミ #グレープ #ペタグーグミ #お菓子 #スイーツ ",
-      "retry_count": 0
-    },
-    {
       "video_id": "7610402078271245569",
       "username": "@naokijiro",
       "video_url": "https://www.tiktok.com/@naokijiro/video/7610402078271245569",
@@ -143,6 +134,19 @@
       "analytics_collected_at": "2026-02-26T22:18:02.081206+00:00",
       "view_count": 345,
       "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7611124710625152277",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7611124710625152277",
+      "title": "一番お気に入りのグミ！ #グミ #グレープ #ペタグーグミ #お菓子 #スイーツ ",
+      "detected_at": "2026-02-26T11:00:13.047020+00:00",
+      "analytics_collected_at": "2026-02-27T11:01:32.010391+00:00",
+      "view_count": 363,
+      "like_count": 10,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
