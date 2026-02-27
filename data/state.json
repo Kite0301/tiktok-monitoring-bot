@@ -25,15 +25,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7610402078271245569",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7610402078271245569",
-      "detected_at": "2026-02-26T22:15:25.924740+00:00",
-      "analytics_due_at": "2026-02-27T22:15:25.924740+00:00",
-      "title": "メープルの香りが広がるぅ〜〜〜💓 サクッと噛めば口いっぱいにメープルの香り☺️ 美味しいメープルバタークッキーはいかが❓️ #ザ・メープル...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7610402708175981825",
       "username": "@naokijiro",
       "video_url": "https://www.tiktok.com/@naokijiro/video/7610402708175981825",
@@ -160,6 +151,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7610402078271245569",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7610402078271245569",
+      "title": "メープルの香りが広がるぅ〜〜〜💓 サクッと噛めば口いっぱいにメープルの香り☺️ 美味しいメープルバタークッキーはいかが❓️ #ザ・メープル...",
+      "detected_at": "2026-02-26T22:15:25.924740+00:00",
+      "analytics_collected_at": "2026-02-27T22:16:41.530052+00:00",
+      "view_count": 229,
+      "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
