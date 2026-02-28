@@ -26,15 +26,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7610402708175981825",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7610402708175981825",
-      "detected_at": "2026-02-27T22:03:05.938221+00:00",
-      "analytics_due_at": "2026-02-28T22:03:05.938221+00:00",
-      "title": "サクッと香ばしい、伸びるマシュマロを味わって☺️ 一度食べたらやみつき‼️ぜひ買って食べてみてね💓 #ドバイジョンドゥククッキー #贈答用...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7611934071928671489",
       "username": "@naokijiro",
       "video_url": "https://www.tiktok.com/@naokijiro/video/7611934071928671489",
@@ -174,6 +165,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7610402708175981825",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7610402708175981825",
+      "title": "サクッと香ばしい、伸びるマシュマロを味わって☺️ 一度食べたらやみつき‼️ぜひ買って食べてみてね💓 #ドバイジョンドゥククッキー #贈答用...",
+      "detected_at": "2026-02-27T22:03:05.938221+00:00",
+      "analytics_collected_at": "2026-02-28T22:11:11.192305+00:00",
+      "view_count": 327,
+      "like_count": 5,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
