@@ -24,17 +24,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7611934071928671489",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7611934071928671489",
-      "detected_at": "2026-02-28T22:00:25.011996+00:00",
-      "analytics_due_at": "2026-03-01T22:00:25.011996+00:00",
-      "title": "#香水 #パフューム",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -178,6 +168,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7611934071928671489",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7611934071928671489",
+      "title": "#香水 #パフューム",
+      "detected_at": "2026-02-28T22:00:25.011996+00:00",
+      "analytics_collected_at": "2026-03-01T22:05:37.203756+00:00",
+      "view_count": 434,
+      "like_count": 2,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
