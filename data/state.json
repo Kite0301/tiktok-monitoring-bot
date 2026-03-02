@@ -28,15 +28,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7612222367099637013",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7612222367099637013",
-      "detected_at": "2026-03-01T22:09:55.320778+00:00",
-      "analytics_due_at": "2026-03-02T22:09:55.320778+00:00",
-      "title": "パリパリチョコ🍫とふんわりマシュマロの組み合わせがサイコーに美味しい‼️ハリボーチョコマシュマロを食べてみた‼️ #ハリボーチョコマシュマ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7612251052586339604",
       "username": "@naokijiro",
       "video_url": "https://www.tiktok.com/@naokijiro/video/7612251052586339604",
@@ -200,6 +191,19 @@
       "view_count": 434,
       "like_count": 2,
       "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
+    },
+    {
+      "video_id": "7612222367099637013",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7612222367099637013",
+      "title": "パリパリチョコ🍫とふんわりマシュマロの組み合わせがサイコーに美味しい‼️ハリボーチョコマシュマロを食べてみた‼️ #ハリボーチョコマシュマ...",
+      "detected_at": "2026-03-01T22:09:55.320778+00:00",
+      "analytics_collected_at": "2026-03-02T22:18:13.055224+00:00",
+      "view_count": 530,
+      "like_count": 8,
+      "comment_count": 1,
       "repost_count": 0,
       "save_count": 1
     }
