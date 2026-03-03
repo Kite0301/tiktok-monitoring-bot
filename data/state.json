@@ -29,15 +29,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7612251052586339604",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7612251052586339604",
-      "detected_at": "2026-03-02T22:13:42.966541+00:00",
-      "analytics_due_at": "2026-03-03T22:13:42.966541+00:00",
-      "title": "甘い美味しい濃密干し芋‼️🍠色々アレンジしても美味しいよ‼️ #干し芋 #濃密干し芋 #紅はるか #茨城県産 #大文字屋商店 ",
-      "retry_count": 0
-    },
-    {
       "video_id": "7612255711325703444",
       "username": "@naokijiro",
       "video_url": "https://www.tiktok.com/@naokijiro/video/7612255711325703444",
@@ -216,6 +207,19 @@
       "comment_count": 1,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7612251052586339604",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7612251052586339604",
+      "title": "甘い美味しい濃密干し芋‼️🍠色々アレンジしても美味しいよ‼️ #干し芋 #濃密干し芋 #紅はるか #茨城県産 #大文字屋商店 ",
+      "detected_at": "2026-03-02T22:13:42.966541+00:00",
+      "analytics_collected_at": "2026-03-03T22:14:22.615529+00:00",
+      "view_count": 132,
+      "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
