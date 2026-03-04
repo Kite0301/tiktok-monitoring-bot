@@ -31,15 +31,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7612255711325703444",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7612255711325703444",
-      "detected_at": "2026-03-03T22:14:00.992914+00:00",
-      "analytics_due_at": "2026-03-04T22:14:00.992914+00:00",
-      "title": "鼻毛抜きワックスのご紹介‼️手軽にできて経済的❗️日頃の鼻毛抜きに革命起きたわコレ‼️ #鼻毛ワックス #babywax ",
-      "retry_count": 0
-    },
-    {
       "video_id": "7613047906295385365",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7613047906295385365",
@@ -239,6 +230,19 @@
       "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7612255711325703444",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7612255711325703444",
+      "title": "鼻毛抜きワックスのご紹介‼️手軽にできて経済的❗️日頃の鼻毛抜きに革命起きたわコレ‼️ #鼻毛ワックス #babywax ",
+      "detected_at": "2026-03-03T22:14:00.992914+00:00",
+      "analytics_collected_at": "2026-03-04T22:16:30.679645+00:00",
+      "view_count": 128,
+      "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 1,
       "save_count": 0
     }
   ]
