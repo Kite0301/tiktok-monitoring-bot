@@ -32,15 +32,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7612259713694043413",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7612259713694043413",
-      "detected_at": "2026-03-04T22:01:50.951431+00:00",
-      "analytics_due_at": "2026-03-05T22:01:50.951431+00:00",
-      "title": "甘美味なチョコレート🍫いっぱいの割れチョコ詰め合わせ❗️コレ本当に美味いから試してみて‼️ #大浜スイーツアカデミー #割れチョコ #チョ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7612266071994748180",
       "username": "@naokijiro",
       "video_url": "https://www.tiktok.com/@naokijiro/video/7612266071994748180",
@@ -255,6 +246,19 @@
       "analytics_collected_at": "2026-03-04T22:50:10.844385+00:00",
       "view_count": 372,
       "like_count": 8,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7612259713694043413",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7612259713694043413",
+      "title": "甘美味なチョコレート🍫いっぱいの割れチョコ詰め合わせ❗️コレ本当に美味いから試してみて‼️ #大浜スイーツアカデミー #割れチョコ #チョ...",
+      "detected_at": "2026-03-04T22:01:50.951431+00:00",
+      "analytics_collected_at": "2026-03-05T22:02:23.867133+00:00",
+      "view_count": 235,
+      "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
