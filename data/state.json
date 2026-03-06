@@ -33,15 +33,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7612266071994748180",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7612266071994748180",
-      "detected_at": "2026-03-05T22:01:32.874535+00:00",
-      "analytics_due_at": "2026-03-06T22:01:32.874535+00:00",
-      "title": "伝説の極太麺‼️コシがあって美味い讃岐うどん❗️噛むたびに感じる高級感‼️美味しいからたべてみて🍜 #伝説の極太麺 #讃岐うどん #tik...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7614082628295265556",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614082628295265556",
@@ -269,6 +260,19 @@
       "analytics_collected_at": "2026-03-05T22:02:23.867133+00:00",
       "view_count": 235,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7612266071994748180",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7612266071994748180",
+      "title": "伝説の極太麺‼️コシがあって美味い讃岐うどん❗️噛むたびに感じる高級感‼️美味しいからたべてみて🍜 #伝説の極太麺 #讃岐うどん #tik...",
+      "detected_at": "2026-03-05T22:01:32.874535+00:00",
+      "analytics_collected_at": "2026-03-06T22:09:22.627655+00:00",
+      "view_count": 121,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
