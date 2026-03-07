@@ -35,15 +35,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7614082628295265556",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614082628295265556",
-      "detected_at": "2026-03-06T10:19:58.516389+00:00",
-      "analytics_due_at": "2026-03-07T10:19:58.516389+00:00",
-      "title": "顔が歪む！シゲキックス史上最高峰のレベル5、もう体験した？一粒で目が覚める強烈なスッパさは、勉強や仕事のお供に最適。30年愛され続ける本物...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7612270530263289109",
       "username": "@naokijiro",
       "video_url": "https://www.tiktok.com/@naokijiro/video/7612270530263289109",
@@ -296,6 +287,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7614082628295265556",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614082628295265556",
+      "title": "顔が歪む！シゲキックス史上最高峰のレベル5、もう体験した？一粒で目が覚める強烈なスッパさは、勉強や仕事のお供に最適。30年愛され続ける本物...",
+      "detected_at": "2026-03-06T10:19:58.516389+00:00",
+      "analytics_collected_at": "2026-03-07T10:30:54.909887+00:00",
+      "view_count": 954,
+      "like_count": 8,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
