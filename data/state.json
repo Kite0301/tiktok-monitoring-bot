@@ -36,15 +36,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7612270530263289109",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7612270530263289109",
-      "detected_at": "2026-03-06T22:23:11.699807+00:00",
-      "analytics_due_at": "2026-03-07T22:23:11.699807+00:00",
-      "title": "フルーティーな味わい🍺キリンのGOOD ALE（グッドエール）🍺最近オススメの缶ビール🍺クラフトビールみたいな独特な味わいが美味🍺試してみ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7614445935824817429",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614445935824817429",
@@ -310,6 +301,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7612270530263289109",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7612270530263289109",
+      "title": "フルーティーな味わい🍺キリンのGOOD ALE（グッドエール）🍺最近オススメの缶ビール🍺クラフトビールみたいな独特な味わいが美味🍺試してみ...",
+      "detected_at": "2026-03-06T22:23:11.699807+00:00",
+      "analytics_collected_at": "2026-03-07T22:23:46.132230+00:00",
+      "view_count": 156,
+      "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
