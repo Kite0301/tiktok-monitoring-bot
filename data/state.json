@@ -38,15 +38,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7614520197793287444",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614520197793287444",
-      "detected_at": "2026-03-07T22:00:05.210055+00:00",
-      "analytics_due_at": "2026-03-08T22:00:05.210055+00:00",
-      "title": "きのこの山とたけのこの里、抹茶対決がついに開幕！あなたは渋みの宇治、旨みの西尾、どっち派ですか？今だけの限定コンビは、奥深い渋みとまろやか...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7614446686269639956",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614446686269639956",
@@ -338,6 +329,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7614520197793287444",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614520197793287444",
+      "title": "きのこの山とたけのこの里、抹茶対決がついに開幕！あなたは渋みの宇治、旨みの西尾、どっち派ですか？今だけの限定コンビは、奥深い渋みとまろやか...",
+      "detected_at": "2026-03-07T22:00:05.210055+00:00",
+      "analytics_collected_at": "2026-03-08T22:09:25.438029+00:00",
+      "view_count": 947,
+      "like_count": 6,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
