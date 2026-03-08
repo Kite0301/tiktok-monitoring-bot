@@ -37,15 +37,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7614445935824817429",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614445935824817429",
-      "detected_at": "2026-03-07T10:01:56.551395+00:00",
-      "analytics_due_at": "2026-03-08T10:01:56.551395+00:00",
-      "title": "忙しい朝の救世主、見つけた！無印良品のコアラパンなら子供も大喜びで、朝の準備がぐっと楽になります。1袋190円でコスパ最強、常温保存できる...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7614520197793287444",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614520197793287444",
@@ -321,6 +312,19 @@
       "analytics_collected_at": "2026-03-07T22:23:46.132230+00:00",
       "view_count": 156,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7614445935824817429",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614445935824817429",
+      "title": "忙しい朝の救世主、見つけた！無印良品のコアラパンなら子供も大喜びで、朝の準備がぐっと楽になります。1袋190円でコスパ最強、常温保存できる...",
+      "detected_at": "2026-03-07T10:01:56.551395+00:00",
+      "analytics_collected_at": "2026-03-08T10:05:45.412059+00:00",
+      "view_count": 1031,
+      "like_count": 5,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
