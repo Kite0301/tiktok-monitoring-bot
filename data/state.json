@@ -39,15 +39,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7614446686269639956",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614446686269639956",
-      "detected_at": "2026-03-08T10:05:15.245598+00:00",
-      "analytics_due_at": "2026-03-09T10:05:15.245598+00:00",
-      "title": "「眠気を速攻で飛ばす方法」を知っていますか？脳を突き抜ける刺激で、一瞬で目が覚めます。1袋100円前後なのに、フリスク以上の強力な刺激でコ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7614516613005446420",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614516613005446420",
@@ -352,6 +343,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7614446686269639956",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614446686269639956",
+      "title": "「眠気を速攻で飛ばす方法」を知っていますか？脳を突き抜ける刺激で、一瞬で目が覚めます。1袋100円前後なのに、フリスク以上の強力な刺激でコ...",
+      "detected_at": "2026-03-08T10:05:15.245598+00:00",
+      "analytics_collected_at": "2026-03-09T10:17:07.055481+00:00",
+      "view_count": 942,
+      "like_count": 6,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
