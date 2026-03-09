@@ -40,15 +40,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7614516613005446420",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614516613005446420",
-      "detected_at": "2026-03-08T22:05:56.009072+00:00",
-      "analytics_due_at": "2026-03-09T22:05:56.009072+00:00",
-      "title": "可愛すぎて食べるのがもったいない！無印良品のコアラパンが映えすぎると話題です。酵母の力で引き出した小麦の優しい甘みがたまらない一品。トース...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7614524374825127189",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614524374825127189",
@@ -364,6 +355,19 @@
       "view_count": 942,
       "like_count": 6,
       "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7614516613005446420",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614516613005446420",
+      "title": "可愛すぎて食べるのがもったいない！無印良品のコアラパンが映えすぎると話題です。酵母の力で引き出した小麦の優しい甘みがたまらない一品。トース...",
+      "detected_at": "2026-03-08T22:05:56.009072+00:00",
+      "analytics_collected_at": "2026-03-09T22:14:09.577712+00:00",
+      "view_count": 1005,
+      "like_count": 3,
+      "comment_count": 1,
       "repost_count": 0,
       "save_count": 0
     }
