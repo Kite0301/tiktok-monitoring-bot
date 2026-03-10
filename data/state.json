@@ -42,15 +42,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7615273743283227924",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615273743283227924",
-      "detected_at": "2026-03-09T22:13:49.321935+00:00",
-      "analytics_due_at": "2026-03-10T22:13:49.321935+00:00",
-      "title": "ついにあの伝説が復活！ブラックサンダー30周年を記念した限定メロンパンが登場。1個400キロカロリー超えの背徳感がたまらない！ずっしり重く...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7615536343984147732",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615536343984147732",
@@ -391,6 +382,19 @@
       "analytics_collected_at": "2026-03-10T10:22:43.387110+00:00",
       "view_count": 980,
       "like_count": 8,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7615273743283227924",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615273743283227924",
+      "title": "ついにあの伝説が復活！ブラックサンダー30周年を記念した限定メロンパンが登場。1個400キロカロリー超えの背徳感がたまらない！ずっしり重く...",
+      "detected_at": "2026-03-09T22:13:49.321935+00:00",
+      "analytics_collected_at": "2026-03-10T22:22:31.305787+00:00",
+      "view_count": 1030,
+      "like_count": 5,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
