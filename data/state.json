@@ -41,15 +41,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7614524374825127189",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614524374825127189",
-      "detected_at": "2026-03-09T10:14:37.777250+00:00",
-      "analytics_due_at": "2026-03-10T10:14:37.777250+00:00",
-      "title": "2大抹茶を贅沢に食べ比べ！宇治抹茶と西尾抹茶が夢の競演を果たしました。きのこの山は渋みの効いた宇治抹茶、たけのこの里はコク深い西尾抹茶を使...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7615273743283227924",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615273743283227924",
@@ -378,6 +369,19 @@
       "view_count": 1005,
       "like_count": 3,
       "comment_count": 1,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7614524374825127189",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7614524374825127189",
+      "title": "2大抹茶を贅沢に食べ比べ！宇治抹茶と西尾抹茶が夢の競演を果たしました。きのこの山は渋みの効いた宇治抹茶、たけのこの里はコク深い西尾抹茶を使...",
+      "detected_at": "2026-03-09T10:14:37.777250+00:00",
+      "analytics_collected_at": "2026-03-10T10:22:43.387110+00:00",
+      "view_count": 980,
+      "like_count": 8,
+      "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
     }
