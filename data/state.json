@@ -43,15 +43,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7615536343984147732",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615536343984147732",
-      "detected_at": "2026-03-10T10:02:44.304984+00:00",
-      "analytics_due_at": "2026-03-11T10:02:44.304984+00:00",
-      "title": "刺激強め！粗挽き黒胡椒のパンチが強烈なカルパスを知っていますか？一口食べればその刺激がクセになります。贅沢な粒感と肉の旨みがぎゅっと詰まっ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7615547069331164437",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615547069331164437",
@@ -405,6 +396,19 @@
       "analytics_collected_at": "2026-03-10T22:22:31.305787+00:00",
       "view_count": 1030,
       "like_count": 5,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7615536343984147732",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615536343984147732",
+      "title": "刺激強め！粗挽き黒胡椒のパンチが強烈なカルパスを知っていますか？一口食べればその刺激がクセになります。贅沢な粒感と肉の旨みがぎゅっと詰まっ...",
+      "detected_at": "2026-03-10T10:02:44.304984+00:00",
+      "analytics_collected_at": "2026-03-11T10:03:24.712828+00:00",
+      "view_count": 967,
+      "like_count": 10,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
