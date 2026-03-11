@@ -43,15 +43,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7615547069331164437",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615547069331164437",
-      "detected_at": "2026-03-10T22:07:35.364723+00:00",
-      "analytics_due_at": "2026-03-11T22:07:35.364723+00:00",
-      "title": "ザクザク感がヤバすぎる！ブラックサンダーメロンパンが衝撃の美味しさです。本家を再現した驚愕の食感と中から溢れ出す濃厚なチョコがたまりません...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7615931624143850772",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615931624143850772",
@@ -412,6 +403,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7615547069331164437",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615547069331164437",
+      "title": "ザクザク感がヤバすぎる！ブラックサンダーメロンパンが衝撃の美味しさです。本家を再現した驚愕の食感と中から溢れ出す濃厚なチョコがたまりません...",
+      "detected_at": "2026-03-10T22:07:35.364723+00:00",
+      "analytics_collected_at": "2026-03-11T22:13:34.287371+00:00",
+      "view_count": 1144,
+      "like_count": 15,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 2
     }
   ]
 }
