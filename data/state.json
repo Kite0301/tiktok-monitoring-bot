@@ -45,15 +45,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7615931624143850772",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615931624143850772",
-      "detected_at": "2026-03-11T10:02:52.526431+00:00",
-      "analytics_due_at": "2026-03-12T10:02:52.526431+00:00",
-      "title": "カニカマ溢れすぎ！シーフードヌードルの具材が今だけ驚異の55％増量中です。カップヌードル誕生55周年を記念した特別仕様で、どこをすくっても...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7616017219864268053",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7616017219864268053",
@@ -436,6 +427,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 2
+    },
+    {
+      "video_id": "7615931624143850772",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615931624143850772",
+      "title": "カニカマ溢れすぎ！シーフードヌードルの具材が今だけ驚異の55％増量中です。カップヌードル誕生55周年を記念した特別仕様で、どこをすくっても...",
+      "detected_at": "2026-03-11T10:02:52.526431+00:00",
+      "analytics_collected_at": "2026-03-12T10:21:11.206497+00:00",
+      "view_count": 971,
+      "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
