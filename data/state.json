@@ -47,15 +47,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7615932492482088213",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615932492482088213",
-      "detected_at": "2026-03-12T10:08:01.533456+00:00",
-      "analytics_due_at": "2026-03-13T10:08:01.533456+00:00",
-      "title": "ビールが止まらなくなる、まさに「ビール泥棒」な魔性のおつまみ。この中毒性、一度食べたら最後です。粗挽き黒胡椒の強烈なパンチが効いたヤガイの...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7616276808052296976",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7616276808052296976",
@@ -464,6 +455,19 @@
       "comment_count": 0,
       "repost_count": 1,
       "save_count": 1
+    },
+    {
+      "video_id": "7615932492482088213",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7615932492482088213",
+      "title": "ビールが止まらなくなる、まさに「ビール泥棒」な魔性のおつまみ。この中毒性、一度食べたら最後です。粗挽き黒胡椒の強烈なパンチが効いたヤガイの...",
+      "detected_at": "2026-03-12T10:08:01.533456+00:00",
+      "analytics_collected_at": "2026-03-13T10:18:16.733322+00:00",
+      "view_count": 946,
+      "like_count": 8,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
