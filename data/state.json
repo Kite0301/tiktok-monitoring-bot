@@ -47,15 +47,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7616276808052296976",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7616276808052296976",
-      "detected_at": "2026-03-12T22:01:07.665420+00:00",
-      "analytics_due_at": "2026-03-13T22:01:07.665420+00:00",
-      "title": "この甘じょっぱさ、沼る。桜の香りが癒やしてくれる、大人なカントリーマアムが登場しました。桜葉の塩気ときなこの甘みが絶妙な「桜きなこ」味。一...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7616278872853613841",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7616278872853613841",
@@ -465,6 +456,19 @@
       "analytics_collected_at": "2026-03-13T10:18:16.733322+00:00",
       "view_count": 946,
       "like_count": 8,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7616276808052296976",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7616276808052296976",
+      "title": "この甘じょっぱさ、沼る。桜の香りが癒やしてくれる、大人なカントリーマアムが登場しました。桜葉の塩気ときなこの甘みが絶妙な「桜きなこ」味。一...",
+      "detected_at": "2026-03-12T22:01:07.665420+00:00",
+      "analytics_collected_at": "2026-03-13T22:02:39.903769+00:00",
+      "view_count": 968,
+      "like_count": 7,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
