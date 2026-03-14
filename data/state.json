@@ -48,15 +48,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7616278872853613841",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7616278872853613841",
-      "detected_at": "2026-03-13T10:17:52.873709+00:00",
-      "analytics_due_at": "2026-03-14T10:17:52.873709+00:00",
-      "title": "ブラックサンダーが衝撃のピンクに！？開けた瞬間に苺が香る、新作のクッキードーナツが凄すぎる。最大の特徴は「硬度10」と評されるほどのザクザ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7617040934550752533",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7617040934550752533",
@@ -482,6 +473,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7616278872853613841",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7616278872853613841",
+      "title": "ブラックサンダーが衝撃のピンクに！？開けた瞬間に苺が香る、新作のクッキードーナツが凄すぎる。最大の特徴は「硬度10」と評されるほどのザクザ...",
+      "detected_at": "2026-03-13T10:17:52.873709+00:00",
+      "analytics_collected_at": "2026-03-14T10:28:32.402253+00:00",
+      "view_count": 1027,
+      "like_count": 23,
+      "comment_count": 1,
+      "repost_count": 1,
+      "save_count": 1
     }
   ]
 }
