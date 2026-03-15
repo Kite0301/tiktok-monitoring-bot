@@ -49,15 +49,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7617040934550752533",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7617040934550752533",
-      "detected_at": "2026-03-14T10:00:56.968586+00:00",
-      "analytics_due_at": "2026-03-15T10:00:56.968586+00:00",
-      "title": "春限定！今しか食べられないカントリーマアムの新作が贅沢すぎる。桜ときなこの風味が絶妙で、外サク中ふわの極上食感がたまりません。100円台で...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7617418758834949397",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7617418758834949397",
@@ -496,6 +487,19 @@
       "comment_count": 1,
       "repost_count": 1,
       "save_count": 1
+    },
+    {
+      "video_id": "7617040934550752533",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7617040934550752533",
+      "title": "春限定！今しか食べられないカントリーマアムの新作が贅沢すぎる。桜ときなこの風味が絶妙で、外サク中ふわの極上食感がたまりません。100円台で...",
+      "detected_at": "2026-03-14T10:00:56.968586+00:00",
+      "analytics_collected_at": "2026-03-15T10:01:07.102748+00:00",
+      "view_count": 374,
+      "like_count": 8,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 2
     }
   ]
 }
