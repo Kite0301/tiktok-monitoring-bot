@@ -47,17 +47,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7617418758834949397",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7617418758834949397",
-      "detected_at": "2026-03-15T10:00:06.901249+00:00",
-      "analytics_due_at": "2026-03-16T10:00:06.901249+00:00",
-      "title": "今しか買えないダース！春限定のプレミアムな味わいが登場。宇治抹茶が華やかに香る「ダースプレミアム＜華やぐ抹茶＞」は、抹茶のほろ苦さとミルク...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -500,6 +490,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 2
+    },
+    {
+      "video_id": "7617418758834949397",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7617418758834949397",
+      "title": "今しか買えないダース！春限定のプレミアムな味わいが登場。宇治抹茶が華やかに香る「ダースプレミアム＜華やぐ抹茶＞」は、抹茶のほろ苦さとミルク...",
+      "detected_at": "2026-03-15T10:00:06.901249+00:00",
+      "analytics_collected_at": "2026-03-16T10:03:16.749700+00:00",
+      "view_count": 397,
+      "like_count": 6,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
