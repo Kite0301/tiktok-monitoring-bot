@@ -51,15 +51,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7617772342231469332",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7617772342231469332",
-      "detected_at": "2026-03-16T10:32:16.390712+00:00",
-      "analytics_due_at": "2026-03-17T10:32:16.390712+00:00",
-      "title": "この断面、濃厚すぎてヤバくない？ファミマ限定のブラックサンダーチョコタルトが衝撃の美味しさ。しっとりチョコ生地とクリームの2層構造に、溢れ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7618146330623397141",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618146330623397141",
@@ -524,6 +515,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7617772342231469332",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7617772342231469332",
+      "title": "この断面、濃厚すぎてヤバくない？ファミマ限定のブラックサンダーチョコタルトが衝撃の美味しさ。しっとりチョコ生地とクリームの2層構造に、溢れ...",
+      "detected_at": "2026-03-16T10:32:16.390712+00:00",
+      "analytics_collected_at": "2026-03-17T10:46:43.695233+00:00",
+      "view_count": 703,
+      "like_count": 9,
+      "comment_count": 1,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
