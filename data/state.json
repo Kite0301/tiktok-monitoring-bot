@@ -53,15 +53,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7618146330623397141",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618146330623397141",
-      "detected_at": "2026-03-17T10:24:32.620248+00:00",
-      "analytics_due_at": "2026-03-18T10:24:32.620248+00:00",
-      "title": "「このザクザク、もはや事件レベルです！」驚きの噛み応えが続く、いちごのサンダーミニバーが登場。キュンとする甘酸っぱいいちごの味わいと、半分...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7618158873215569173",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618158873215569173",
@@ -546,6 +537,19 @@
       "view_count": 703,
       "like_count": 9,
       "comment_count": 1,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7618146330623397141",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618146330623397141",
+      "title": "「このザクザク、もはや事件レベルです！」驚きの噛み応えが続く、いちごのサンダーミニバーが登場。キュンとする甘酸っぱいいちごの味わいと、半分...",
+      "detected_at": "2026-03-17T10:24:32.620248+00:00",
+      "analytics_collected_at": "2026-03-18T10:35:30.786072+00:00",
+      "view_count": 330,
+      "like_count": 7,
+      "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
     }
