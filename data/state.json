@@ -54,15 +54,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7618158873215569173",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618158873215569173",
-      "detected_at": "2026-03-17T22:16:22.889602+00:00",
-      "analytics_due_at": "2026-03-18T22:16:22.889602+00:00",
-      "title": "このハリボー可愛すぎませんか？春限定のサクラモチーフが新登場です！お皿に並べるだけでサクラ満開。200円前後で買えるプチプラなのに、今しか...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7618527329794542868",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618527329794542868",
@@ -562,6 +553,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7618158873215569173",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618158873215569173",
+      "title": "このハリボー可愛すぎませんか？春限定のサクラモチーフが新登場です！お皿に並べるだけでサクラ満開。200円前後で買えるプチプラなのに、今しか...",
+      "detected_at": "2026-03-17T22:16:22.889602+00:00",
+      "analytics_collected_at": "2026-03-18T22:16:49.320053+00:00",
+      "view_count": 377,
+      "like_count": 5,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
