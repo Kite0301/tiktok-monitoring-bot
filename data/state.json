@@ -52,17 +52,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7618531052767776020",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618531052767776020",
-      "detected_at": "2026-03-18T22:01:08.285750+00:00",
-      "analytics_due_at": "2026-03-19T22:01:08.285750+00:00",
-      "title": "あのチョコの王者が苺になった！安心のブラックサンダー品質はそのままに、甘酸っぱいいちご味が新登場。便利な個包装だから職場や友人とのシェアに...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -568,6 +558,19 @@
       "view_count": 359,
       "like_count": 7,
       "comment_count": 1,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7618531052767776020",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618531052767776020",
+      "title": "あのチョコの王者が苺になった！安心のブラックサンダー品質はそのままに、甘酸っぱいいちご味が新登場。便利な個包装だから職場や友人とのシェアに...",
+      "detected_at": "2026-03-18T22:01:08.285750+00:00",
+      "analytics_collected_at": "2026-03-19T22:01:54.659396+00:00",
+      "view_count": 321,
+      "like_count": 3,
+      "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
     }
