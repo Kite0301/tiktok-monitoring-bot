@@ -54,15 +54,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7618527329794542868",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618527329794542868",
-      "detected_at": "2026-03-18T10:01:42.660989+00:00",
-      "analytics_due_at": "2026-03-19T10:01:42.660989+00:00",
-      "title": "「中まで全部、真っ白なチョコ？」冬限定、ルックの最高傑作が登場。見た目から贅沢すぎるホワイト仕様です。大粒のチョコから溢れ出す、淡雪いちご...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7618531052767776020",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618531052767776020",
@@ -566,6 +557,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7618527329794542868",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7618527329794542868",
+      "title": "「中まで全部、真っ白なチョコ？」冬限定、ルックの最高傑作が登場。見た目から贅沢すぎるホワイト仕様です。大粒のチョコから溢れ出す、淡雪いちご...",
+      "detected_at": "2026-03-18T10:01:42.660989+00:00",
+      "analytics_collected_at": "2026-03-19T10:04:43.306969+00:00",
+      "view_count": 359,
+      "like_count": 7,
+      "comment_count": 1,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
