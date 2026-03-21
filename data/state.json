@@ -53,17 +53,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7619275686788123925",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7619275686788123925",
-      "detected_at": "2026-03-20T10:19:34.038597+00:00",
-      "analytics_due_at": "2026-03-21T10:19:34.038597+00:00",
-      "title": "あのスッパイマンが合体！？スッパイ大作戦との奇跡のタッグで、最強の梅グミが誕生しました。刺激的なパウダーがクセになるこの一品。スッパイマン...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -581,6 +571,19 @@
       "analytics_collected_at": "2026-03-19T22:01:54.659396+00:00",
       "view_count": 321,
       "like_count": 3,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7619275686788123925",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7619275686788123925",
+      "title": "あのスッパイマンが合体！？スッパイ大作戦との奇跡のタッグで、最強の梅グミが誕生しました。刺激的なパウダーがクセになるこの一品。スッパイマン...",
+      "detected_at": "2026-03-20T10:19:34.038597+00:00",
+      "analytics_collected_at": "2026-03-21T10:25:39.445218+00:00",
+      "view_count": 363,
+      "like_count": 4,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
