@@ -54,17 +54,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7619698448161426708",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7619698448161426708",
-      "detected_at": "2026-03-21T13:23:53.895756+00:00",
-      "analytics_due_at": "2026-03-22T13:23:53.895756+00:00",
-      "title": "「この粉、中毒性ヤバい。」一度食べたら止まらないスッパイマン大作戦。強烈な甘酸っぱさとパウダーがクセになる！ハードな噛み応えで眠気もシャキ...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -595,6 +585,19 @@
       "analytics_collected_at": "2026-03-21T10:25:39.445218+00:00",
       "view_count": 363,
       "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7619698448161426708",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7619698448161426708",
+      "title": "「この粉、中毒性ヤバい。」一度食べたら止まらないスッパイマン大作戦。強烈な甘酸っぱさとパウダーがクセになる！ハードな噛み応えで眠気もシャキ...",
+      "detected_at": "2026-03-21T13:23:53.895756+00:00",
+      "analytics_collected_at": "2026-03-22T13:34:42.616230+00:00",
+      "view_count": 352,
+      "like_count": 3,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
