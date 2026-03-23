@@ -58,15 +58,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7620084811469819157",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7620084811469819157",
-      "detected_at": "2026-03-22T14:30:56.630174+00:00",
-      "analytics_due_at": "2026-03-23T14:30:56.630174+00:00",
-      "title": "無印良品で今しか買えない、毎年大人気の「桜のアイスボックスクッキー」が登場！袋を開けた瞬間に広がる本格的な桜の香りと、華やかな市松模様が春...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7620369724102151444",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7620369724102151444",
@@ -619,6 +610,19 @@
       "analytics_collected_at": "2026-03-22T13:34:42.616230+00:00",
       "view_count": 352,
       "like_count": 3,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7620084811469819157",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7620084811469819157",
+      "title": "無印良品で今しか買えない、毎年大人気の「桜のアイスボックスクッキー」が登場！袋を開けた瞬間に広がる本格的な桜の香りと、華やかな市松模様が春...",
+      "detected_at": "2026-03-22T14:30:56.630174+00:00",
+      "analytics_collected_at": "2026-03-23T14:33:54.504886+00:00",
+      "view_count": 4,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
