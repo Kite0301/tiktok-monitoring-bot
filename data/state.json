@@ -56,17 +56,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7620369724102151444",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7620369724102151444",
-      "detected_at": "2026-03-23T10:15:27.846683+00:00",
-      "analytics_due_at": "2026-03-24T10:15:27.846683+00:00",
-      "title": "今年のお花見、これ持ってこ！無印良品の桜のアイスボックスクッキーが「おしゃピク」に最高なんです。桜の花と葉をイメージしたピンクと緑の市松模...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -626,6 +616,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7620369724102151444",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7620369724102151444",
+      "title": "今年のお花見、これ持ってこ！無印良品の桜のアイスボックスクッキーが「おしゃピク」に最高なんです。桜の花と葉をイメージしたピンクと緑の市松模...",
+      "detected_at": "2026-03-23T10:15:27.846683+00:00",
+      "analytics_collected_at": "2026-03-24T10:25:28.144232+00:00",
+      "view_count": 1037,
+      "like_count": 10,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 2
     }
   ]
 }
