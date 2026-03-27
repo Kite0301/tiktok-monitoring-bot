@@ -61,15 +61,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7621393273776524564",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7621393273776524564",
-      "detected_at": "2026-03-26T10:10:13.681901+00:00",
-      "analytics_due_at": "2026-03-27T10:10:13.681901+00:00",
-      "title": "苺好きさん絶対見て！ファミマで見つけたピンクなブラックサンダーが衝撃の美味しさ。北海道苺の甘酸っぱさとWビスケットのザックザク食感が神レベ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7621848517962714388",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7621848517962714388",
@@ -664,6 +655,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 2
+    },
+    {
+      "video_id": "7621393273776524564",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7621393273776524564",
+      "title": "苺好きさん絶対見て！ファミマで見つけたピンクなブラックサンダーが衝撃の美味しさ。北海道苺の甘酸っぱさとWビスケットのザックザク食感が神レベ...",
+      "detected_at": "2026-03-26T10:10:13.681901+00:00",
+      "analytics_collected_at": "2026-03-27T10:24:19.438492+00:00",
+      "view_count": 2387,
+      "like_count": 21,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
