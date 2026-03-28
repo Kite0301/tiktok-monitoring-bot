@@ -59,17 +59,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7621848517962714388",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7621848517962714388",
-      "detected_at": "2026-03-27T10:23:51.129572+00:00",
-      "analytics_due_at": "2026-03-28T10:23:51.129572+00:00",
-      "title": "いちご好きさん、絶対食べて！ファミマから「ピンクなブラックサンダー」のクッキードーナツが登場。北海道産いちごの甘酸っぱさとココアのほろ苦さ...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -665,6 +655,19 @@
       "analytics_collected_at": "2026-03-27T10:24:19.438492+00:00",
       "view_count": 2387,
       "like_count": 21,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7621848517962714388",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7621848517962714388",
+      "title": "いちご好きさん、絶対食べて！ファミマから「ピンクなブラックサンダー」のクッキードーナツが登場。北海道産いちごの甘酸っぱさとココアのほろ苦さ...",
+      "detected_at": "2026-03-27T10:23:51.129572+00:00",
+      "analytics_collected_at": "2026-03-28T10:38:00.419036+00:00",
+      "view_count": 1014,
+      "like_count": 9,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
