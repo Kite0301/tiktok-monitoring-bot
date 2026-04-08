@@ -60,17 +60,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7625874162262773009",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7625874162262773009",
-      "detected_at": "2026-04-07T09:14:12.416781+00:00",
-      "analytics_due_at": "2026-04-08T09:14:12.416781+00:00",
-      "title": "短髪で理想の束感を作るならこれ一択。自由自在に髪型が決まるEXGEEハードワックスが登場しました。立ち上げに最適なキープ力に加え、UVガー...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -682,6 +672,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7625874162262773009",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7625874162262773009",
+      "title": "短髪で理想の束感を作るならこれ一択。自由自在に髪型が決まるEXGEEハードワックスが登場しました。立ち上げに最適なキープ力に加え、UVガー...",
+      "detected_at": "2026-04-07T09:14:12.416781+00:00",
+      "analytics_collected_at": "2026-04-08T09:14:37.639079+00:00",
+      "view_count": 236,
+      "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
