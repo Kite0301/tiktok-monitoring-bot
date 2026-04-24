@@ -74,15 +74,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7631772448945458453",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7631772448945458453",
-      "detected_at": "2026-04-23T22:03:03.975935+00:00",
-      "analytics_due_at": "2026-04-24T22:03:03.975935+00:00",
-      "title": "なんとなくでスキンケア選んでない？満足してないなら富士フイルムの科学が詰まったこれ一択。写真フィルムのナノテクがガチでエグい。とろみがある...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7631772909370985749",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7631772909370985749",
@@ -770,6 +761,19 @@
       "analytics_collected_at": "2026-04-24T10:51:23.847976+00:00",
       "view_count": 300,
       "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7631772448945458453",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7631772448945458453",
+      "title": "なんとなくでスキンケア選んでない？満足してないなら富士フイルムの科学が詰まったこれ一択。写真フィルムのナノテクがガチでエグい。とろみがある...",
+      "detected_at": "2026-04-23T22:03:03.975935+00:00",
+      "analytics_collected_at": "2026-04-24T22:09:58.526000+00:00",
+      "view_count": 127,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
