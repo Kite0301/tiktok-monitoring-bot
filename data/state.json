@@ -73,15 +73,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7631770664873102612",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7631770664873102612",
-      "detected_at": "2026-04-23T10:39:27.707120+00:00",
-      "analytics_due_at": "2026-04-24T10:39:27.707120+00:00",
-      "title": "多くの男性が意外と知らない、抑えておくべき圧倒的なコスパの正解。富士フイルムのナノ技術を凝縮したアスタリフトメンのモノムは、月々約2,20...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7631772448945458453",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7631772448945458453",
@@ -759,6 +750,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7631770664873102612",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7631770664873102612",
+      "title": "多くの男性が意外と知らない、抑えておくべき圧倒的なコスパの正解。富士フイルムのナノ技術を凝縮したアスタリフトメンのモノムは、月々約2,20...",
+      "detected_at": "2026-04-23T10:39:27.707120+00:00",
+      "analytics_collected_at": "2026-04-24T10:51:23.847976+00:00",
+      "view_count": 300,
+      "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
