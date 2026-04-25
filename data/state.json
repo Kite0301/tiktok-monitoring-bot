@@ -75,15 +75,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7631772909370985749",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7631772909370985749",
-      "detected_at": "2026-04-24T05:11:11.601353+00:00",
-      "analytics_due_at": "2026-04-25T05:11:11.601353+00:00",
-      "title": "何度も乾燥を繰り返す人はこれ！アスタリフト メン最新の保湿液が登場。ベタつきが苦手な方にも最適です。とろみのある液が素早くなじみ、表面はサ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7631773365279247637",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7631773365279247637",
@@ -783,6 +774,19 @@
       "detected_at": "2026-04-23T22:03:03.975935+00:00",
       "analytics_collected_at": "2026-04-24T22:09:58.526000+00:00",
       "view_count": 127,
+      "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7631772909370985749",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7631772909370985749",
+      "title": "何度も乾燥を繰り返す人はこれ！アスタリフト メン最新の保湿液が登場。ベタつきが苦手な方にも最適です。とろみのある液が素早くなじみ、表面はサ...",
+      "detected_at": "2026-04-24T05:11:11.601353+00:00",
+      "analytics_collected_at": "2026-04-25T05:26:16.376757+00:00",
+      "view_count": 129,
       "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
