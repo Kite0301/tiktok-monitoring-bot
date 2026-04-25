@@ -75,15 +75,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7631773365279247637",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7631773365279247637",
-      "detected_at": "2026-04-24T10:18:54.635050+00:00",
-      "analytics_due_at": "2026-04-25T10:18:54.635050+00:00",
-      "title": "保湿してもすぐ乾く人はこれ。カサつきを繰り返す男性の「乾燥ループ」に着目した新習慣です。アスタリフト メン モノム モイスチャライザーが、...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7631775169593265429",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7631775169593265429",
@@ -788,6 +779,19 @@
       "analytics_collected_at": "2026-04-25T05:26:16.376757+00:00",
       "view_count": 129,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7631773365279247637",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7631773365279247637",
+      "title": "保湿してもすぐ乾く人はこれ。カサつきを繰り返す男性の「乾燥ループ」に着目した新習慣です。アスタリフト メン モノム モイスチャライザーが、...",
+      "detected_at": "2026-04-24T10:18:54.635050+00:00",
+      "analytics_collected_at": "2026-04-25T10:28:58.893736+00:00",
+      "view_count": 169,
+      "like_count": 3,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
