@@ -73,17 +73,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7631784215016672532",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7631784215016672532",
-      "detected_at": "2026-04-25T04:40:06.441846+00:00",
-      "analytics_due_at": "2026-04-26T04:40:06.441846+00:00",
-      "title": "スキンケアが面倒な全男性へ。これ一本で男の肌が整います。化粧水からクリームまで1本に凝縮された本格ケア。ひげ剃りや乾燥などのダメージから肌...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -799,6 +789,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7631784215016672532",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7631784215016672532",
+      "title": "スキンケアが面倒な全男性へ。これ一本で男の肌が整います。化粧水からクリームまで1本に凝縮された本格ケア。ひげ剃りや乾燥などのダメージから肌...",
+      "detected_at": "2026-04-25T04:40:06.441846+00:00",
+      "analytics_collected_at": "2026-04-26T05:27:51.911637+00:00",
+      "view_count": 165,
+      "like_count": 6,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
