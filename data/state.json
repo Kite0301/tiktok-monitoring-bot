@@ -79,15 +79,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7637076450838940948",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7637076450838940948",
-      "detected_at": "2026-05-07T22:23:35.491561+00:00",
-      "analytics_due_at": "2026-05-08T22:23:35.491561+00:00",
-      "title": "夕方の肌の乾燥が気になる人は試してみて。朝晩の使用で一日中うるおいが続く保湿液です。富士フイルム独自の技術を応用したナノ成分が、角層まで素...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7637080214295563541",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7637080214295563541",
@@ -844,6 +835,19 @@
       "analytics_collected_at": "2026-05-03T12:31:15.921492+00:00",
       "view_count": 88,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7637076450838940948",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7637076450838940948",
+      "title": "夕方の肌の乾燥が気になる人は試してみて。朝晩の使用で一日中うるおいが続く保湿液です。富士フイルム独自の技術を応用したナノ成分が、角層まで素...",
+      "detected_at": "2026-05-07T22:23:35.491561+00:00",
+      "analytics_collected_at": "2026-05-08T22:27:21.070187+00:00",
+      "view_count": 123,
+      "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
