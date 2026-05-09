@@ -82,15 +82,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7637427560095239445",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7637427560095239445",
-      "detected_at": "2026-05-08T22:27:26.808130+00:00",
-      "analytics_due_at": "2026-05-09T22:27:26.808130+00:00",
-      "title": "上位1%が実践する最強の肌管理術。潤いを逃さないセラミドケアで、一生モノの清潔感を手に入れましょう。アスタリフト メンは男性特有の乾燥サイ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7637428000375442709",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7637428000375442709",
@@ -886,6 +877,19 @@
       "analytics_collected_at": "2026-05-09T10:52:32.136193+00:00",
       "view_count": 267,
       "like_count": 3,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7637427560095239445",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7637427560095239445",
+      "title": "上位1%が実践する最強の肌管理術。潤いを逃さないセラミドケアで、一生モノの清潔感を手に入れましょう。アスタリフト メンは男性特有の乾燥サイ...",
+      "detected_at": "2026-05-08T22:27:26.808130+00:00",
+      "analytics_collected_at": "2026-05-09T22:28:34.343950+00:00",
+      "view_count": 101,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
