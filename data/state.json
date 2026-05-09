@@ -82,15 +82,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7637427316301417749",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7637427316301417749",
-      "detected_at": "2026-05-08T10:40:49.038221+00:00",
-      "analytics_due_at": "2026-05-09T10:40:49.038221+00:00",
-      "title": "冬の乾燥で肌がカサカサになりがちな時期。うるおい流出を止めるアスタリフトメンを導入しましょう。とろみがあるのにベタつきゼロで、肌にスッと馴...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7637427560095239445",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7637427560095239445",
@@ -882,6 +873,19 @@
       "analytics_collected_at": "2026-05-09T05:17:21.830745+00:00",
       "view_count": 330,
       "like_count": 6,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7637427316301417749",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7637427316301417749",
+      "title": "冬の乾燥で肌がカサカサになりがちな時期。うるおい流出を止めるアスタリフトメンを導入しましょう。とろみがあるのにベタつきゼロで、肌にスッと馴...",
+      "detected_at": "2026-05-08T10:40:49.038221+00:00",
+      "analytics_collected_at": "2026-05-09T10:52:32.136193+00:00",
+      "view_count": 267,
+      "like_count": 3,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
