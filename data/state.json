@@ -81,15 +81,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7637080214295563541",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7637080214295563541",
-      "detected_at": "2026-05-08T04:44:29.651879+00:00",
-      "analytics_due_at": "2026-05-09T04:44:29.651879+00:00",
-      "title": "「男の乾燥ループ」を一瞬でブロック！これ一本で一日中うるおいが続く、理想の肌への近道です。富士フイルムのナノ技術を応用した極小成分が、角層...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7637427316301417749",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7637427316301417749",
@@ -868,6 +859,19 @@
       "analytics_collected_at": "2026-05-08T22:27:21.070187+00:00",
       "view_count": 123,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7637080214295563541",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7637080214295563541",
+      "title": "「男の乾燥ループ」を一瞬でブロック！これ一本で一日中うるおいが続く、理想の肌への近道です。富士フイルムのナノ技術を応用した極小成分が、角層...",
+      "detected_at": "2026-05-08T04:44:29.651879+00:00",
+      "analytics_collected_at": "2026-05-09T05:17:21.830745+00:00",
+      "view_count": 330,
+      "like_count": 6,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
