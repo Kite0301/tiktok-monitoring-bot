@@ -80,17 +80,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7637436326748392724",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7637436326748392724",
-      "detected_at": "2026-05-09T10:25:25.659101+00:00",
-      "analytics_due_at": "2026-05-10T10:25:25.659101+00:00",
-      "title": "デキる男の肌の裏側、知りたくないですか？潤いが続く秘密はアスタリフト メン。洗面台をスマートに彩る洗練されたボトルが目を引きます。Wヒト型...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -894,6 +884,19 @@
       "analytics_collected_at": "2026-05-10T04:41:00.222212+00:00",
       "view_count": 109,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7637436326748392724",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7637436326748392724",
+      "title": "デキる男の肌の裏側、知りたくないですか？潤いが続く秘密はアスタリフト メン。洗面台をスマートに彩る洗練されたボトルが目を引きます。Wヒト型...",
+      "detected_at": "2026-05-09T10:25:25.659101+00:00",
+      "analytics_collected_at": "2026-05-10T10:42:08.704259+00:00",
+      "view_count": 143,
+      "like_count": 2,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
