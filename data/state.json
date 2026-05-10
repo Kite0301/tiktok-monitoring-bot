@@ -82,15 +82,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7637428000375442709",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7637428000375442709",
-      "detected_at": "2026-05-09T04:05:04.776659+00:00",
-      "analytics_due_at": "2026-05-10T04:05:04.776659+00:00",
-      "title": "常識はずれな潤いの持続力に驚き。男性特有の乾燥ループを根本から防ぐ、アスタリフト メンの保湿液です。ヒゲ剃りや紫外線による乾燥サイクルを遮...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7637436326748392724",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7637436326748392724",
@@ -889,6 +880,19 @@
       "detected_at": "2026-05-08T22:27:26.808130+00:00",
       "analytics_collected_at": "2026-05-09T22:28:34.343950+00:00",
       "view_count": 101,
+      "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7637428000375442709",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7637428000375442709",
+      "title": "常識はずれな潤いの持続力に驚き。男性特有の乾燥ループを根本から防ぐ、アスタリフト メンの保湿液です。ヒゲ剃りや紫外線による乾燥サイクルを遮...",
+      "detected_at": "2026-05-09T04:05:04.776659+00:00",
+      "analytics_collected_at": "2026-05-10T04:41:00.222212+00:00",
+      "view_count": 109,
       "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
