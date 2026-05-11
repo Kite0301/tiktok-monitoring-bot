@@ -86,24 +86,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7638268360182025493",
-      "username": "@naokijiro",
-      "video_url": "https://www.tiktok.com/@naokijiro/video/7638268360182025493",
-      "detected_at": "2026-05-10T22:05:24.462337+00:00",
-      "analytics_due_at": "2026-05-11T22:05:24.462337+00:00",
-      "title": "男の肌ケア  40歳、最近疲れてる？ってよく言われる。肌ツヤ悪いのかな？友人に勧められてMONOMって化粧水を使ってみた。なんだか肌に張り...",
-      "retry_count": 0
-    },
-    {
-      "video_id": "7638258068899286292",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7638258068899286292",
-      "detected_at": "2026-05-10T22:05:24.462337+00:00",
-      "analytics_due_at": "2026-05-11T22:05:24.462337+00:00",
-      "title": "この動画が流れた人はラッキー！男特有の乾燥ループを止める保湿液をご紹介します。Ｗヒト型ナノセラミド配合で角層まで潤いを届け、肌を整えます。...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7638258500220488981",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7638258500220488981",
@@ -938,6 +920,32 @@
       "analytics_collected_at": "2026-05-10T10:42:08.704259+00:00",
       "view_count": 143,
       "like_count": 2,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7638268360182025493",
+      "username": "@naokijiro",
+      "video_url": "https://www.tiktok.com/@naokijiro/video/7638268360182025493",
+      "title": "男の肌ケア  40歳、最近疲れてる？ってよく言われる。肌ツヤ悪いのかな？友人に勧められてMONOMって化粧水を使ってみた。なんだか肌に張り...",
+      "detected_at": "2026-05-10T22:05:24.462337+00:00",
+      "analytics_collected_at": "2026-05-11T22:16:42.849038+00:00",
+      "view_count": 103,
+      "like_count": 2,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7638258068899286292",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7638258068899286292",
+      "title": "この動画が流れた人はラッキー！男特有の乾燥ループを止める保湿液をご紹介します。Ｗヒト型ナノセラミド配合で角層まで潤いを届け、肌を整えます。...",
+      "detected_at": "2026-05-10T22:05:24.462337+00:00",
+      "analytics_collected_at": "2026-05-11T22:16:42.849038+00:00",
+      "view_count": 163,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
