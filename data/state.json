@@ -88,15 +88,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7638258500220488981",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7638258500220488981",
-      "detected_at": "2026-05-11T04:01:47.031995+00:00",
-      "analytics_due_at": "2026-05-12T04:01:47.031995+00:00",
-      "title": "男の乾燥を防ぐアスタリフトの本格保湿液。おすすめに出た人はラッキーです！チャ葉エキスなどの厳選成分が外部刺激から肌を守り、角層を整えます。...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7638258699307322644",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7638258699307322644",
@@ -966,6 +957,19 @@
       "analytics_collected_at": "2026-05-11T22:16:42.849038+00:00",
       "view_count": 163,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7638258500220488981",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7638258500220488981",
+      "title": "男の乾燥を防ぐアスタリフトの本格保湿液。おすすめに出た人はラッキーです！チャ葉エキスなどの厳選成分が外部刺激から肌を守り、角層を整えます。...",
+      "detected_at": "2026-05-11T04:01:47.031995+00:00",
+      "analytics_collected_at": "2026-05-12T04:37:39.052254+00:00",
+      "view_count": 291,
+      "like_count": 3,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
