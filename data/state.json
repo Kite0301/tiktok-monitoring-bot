@@ -90,15 +90,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7638545541894327572",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7638545541894327572",
-      "detected_at": "2026-05-11T22:30:03.286202+00:00",
-      "analytics_due_at": "2026-05-12T22:30:03.286202+00:00",
-      "title": "まだ知らない人は損してるかも。アスタリフトの保湿液が本気で優秀。穴場情報としてシェアします。フローラルグリーンの香りが爽やかで清潔感も抜群...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7638563390717267221",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7638563390717267221",
@@ -994,6 +985,19 @@
       "analytics_collected_at": "2026-05-12T11:28:31.045511+00:00",
       "view_count": 511,
       "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7638545541894327572",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7638545541894327572",
+      "title": "まだ知らない人は損してるかも。アスタリフトの保湿液が本気で優秀。穴場情報としてシェアします。フローラルグリーンの香りが爽やかで清潔感も抜群...",
+      "detected_at": "2026-05-11T22:30:03.286202+00:00",
+      "analytics_collected_at": "2026-05-12T22:46:46.173934+00:00",
+      "view_count": 193,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
