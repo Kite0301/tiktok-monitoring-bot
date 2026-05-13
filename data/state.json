@@ -90,15 +90,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7638563390717267221",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7638563390717267221",
-      "detected_at": "2026-05-12T04:12:47.830254+00:00",
-      "analytics_due_at": "2026-05-13T04:12:47.830254+00:00",
-      "title": "初めてのスキンケア、何から始めればいいか迷っていませんか？これ一本で男の乾燥ループを速攻ブロック。朝晩の使用で一日中うるおいをキープ。とろ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7638563691331505429",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7638563691331505429",
@@ -997,6 +988,19 @@
       "detected_at": "2026-05-11T22:30:03.286202+00:00",
       "analytics_collected_at": "2026-05-12T22:46:46.173934+00:00",
       "view_count": 193,
+      "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7638563390717267221",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7638563390717267221",
+      "title": "初めてのスキンケア、何から始めればいいか迷っていませんか？これ一本で男の乾燥ループを速攻ブロック。朝晩の使用で一日中うるおいをキープ。とろ...",
+      "detected_at": "2026-05-12T04:12:47.830254+00:00",
+      "analytics_collected_at": "2026-05-13T04:39:05.045472+00:00",
+      "view_count": 137,
       "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
