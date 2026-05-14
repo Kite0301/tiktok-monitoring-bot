@@ -94,15 +94,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7639198002367712532",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639198002367712532",
-      "detected_at": "2026-05-13T04:43:00.719131+00:00",
-      "analytics_due_at": "2026-05-14T04:43:00.719131+00:00",
-      "title": "男の乾燥ループを止める秘密を暴露。アスタリフト メンの保湿液がすごいんです。レフィル形式で2回目以降もお得に続けられるから、コスパ重視派に...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7639235375432551701",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7639235375432551701",
@@ -1050,6 +1041,19 @@
       "analytics_collected_at": "2026-05-13T22:33:30.717629+00:00",
       "view_count": 193,
       "like_count": 2,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639198002367712532",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639198002367712532",
+      "title": "男の乾燥ループを止める秘密を暴露。アスタリフト メンの保湿液がすごいんです。レフィル形式で2回目以降もお得に続けられるから、コスパ重視派に...",
+      "detected_at": "2026-05-13T04:43:00.719131+00:00",
+      "analytics_collected_at": "2026-05-14T05:06:07.603211+00:00",
+      "view_count": 125,
+      "like_count": 4,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
