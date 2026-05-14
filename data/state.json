@@ -95,15 +95,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7639235375432551701",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639235375432551701",
-      "detected_at": "2026-05-13T10:12:56.088198+00:00",
-      "analytics_due_at": "2026-05-14T10:12:56.088198+00:00",
-      "title": "乾燥を繰り返す人は必見！ヒゲ剃りや紫外線による「うるおい流出ループ」を遮断する、アスタリフト メンの保湿液を紹介します。独自技術のWヒト型...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7639244188923694356",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7639244188923694356",
@@ -1064,6 +1055,19 @@
       "analytics_collected_at": "2026-05-14T05:06:07.603211+00:00",
       "view_count": 125,
       "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639235375432551701",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639235375432551701",
+      "title": "乾燥を繰り返す人は必見！ヒゲ剃りや紫外線による「うるおい流出ループ」を遮断する、アスタリフト メンの保湿液を紹介します。独自技術のWヒト型...",
+      "detected_at": "2026-05-13T10:12:56.088198+00:00",
+      "analytics_collected_at": "2026-05-14T10:59:55.423708+00:00",
+      "view_count": 97,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
