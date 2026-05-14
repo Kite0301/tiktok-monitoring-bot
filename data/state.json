@@ -96,15 +96,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7639244188923694356",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639244188923694356",
-      "detected_at": "2026-05-13T22:30:17.389079+00:00",
-      "analytics_due_at": "2026-05-14T22:30:17.389079+00:00",
-      "title": "本気で乾燥に悩む男性へ。美容のプロが推す「至高の保湿ケア」がこれ。アスタリフト メン モノム モイスチャライザーは、洗練された赤いボトルで...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7639258478581648661",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7639258478581648661",
@@ -1078,6 +1069,19 @@
       "analytics_collected_at": "2026-05-14T10:59:55.423708+00:00",
       "view_count": 97,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639244188923694356",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639244188923694356",
+      "title": "本気で乾燥に悩む男性へ。美容のプロが推す「至高の保湿ケア」がこれ。アスタリフト メン モノム モイスチャライザーは、洗練された赤いボトルで...",
+      "detected_at": "2026-05-13T22:30:17.389079+00:00",
+      "analytics_collected_at": "2026-05-14T22:42:29.694059+00:00",
+      "view_count": 101,
+      "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
