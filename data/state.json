@@ -98,15 +98,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7639585880994221330",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639585880994221330",
-      "detected_at": "2026-05-14T10:56:10.503309+00:00",
-      "analytics_due_at": "2026-05-15T10:56:10.503309+00:00",
-      "title": "おすすめに出てきた人はラッキー！乾燥の負のループを止める最新の保湿液が登場。敏感肌パッチテスト済みで、デリケートな肌でも毎日心地よく使えま...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7639637073695395080",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7639637073695395080",
@@ -1106,6 +1097,19 @@
       "analytics_collected_at": "2026-05-15T05:03:10.195063+00:00",
       "view_count": 170,
       "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639585880994221330",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639585880994221330",
+      "title": "おすすめに出てきた人はラッキー！乾燥の負のループを止める最新の保湿液が登場。敏感肌パッチテスト済みで、デリケートな肌でも毎日心地よく使えま...",
+      "detected_at": "2026-05-14T10:56:10.503309+00:00",
+      "analytics_collected_at": "2026-05-15T11:21:17.823491+00:00",
+      "view_count": 114,
+      "like_count": 2,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
