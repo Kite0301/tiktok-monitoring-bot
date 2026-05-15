@@ -97,15 +97,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7639258478581648661",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639258478581648661",
-      "detected_at": "2026-05-14T04:38:55.574158+00:00",
-      "analytics_due_at": "2026-05-15T04:38:55.574158+00:00",
-      "title": "乾燥を繰り返す肌に悩んでいませんか？この保湿液を使う前と後では肌の質感が全然違います。独自のWヒト型ナノセラミドが角層まで潤いを届け、4種...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7639585880994221330",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7639585880994221330",
@@ -1092,6 +1083,19 @@
       "analytics_collected_at": "2026-05-14T22:42:29.694059+00:00",
       "view_count": 101,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639258478581648661",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639258478581648661",
+      "title": "乾燥を繰り返す肌に悩んでいませんか？この保湿液を使う前と後では肌の質感が全然違います。独自のWヒト型ナノセラミドが角層まで潤いを届け、4種...",
+      "detected_at": "2026-05-14T04:38:55.574158+00:00",
+      "analytics_collected_at": "2026-05-15T05:03:10.195063+00:00",
+      "view_count": 170,
+      "like_count": 4,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
