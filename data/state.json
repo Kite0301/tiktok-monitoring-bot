@@ -99,15 +99,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7639637073695395080",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639637073695395080",
-      "detected_at": "2026-05-14T22:17:36.838225+00:00",
-      "analytics_due_at": "2026-05-15T22:17:36.838225+00:00",
-      "title": "男の乾燥を徹底ブロック！アスタリフト メンから新作の保湿液が登場しました。夕方まで潤いが続く秘密は、4種の厳選保護成分にあります。朝晩のケ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7639645470012312850",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7639645470012312850",
@@ -1120,6 +1111,19 @@
       "analytics_collected_at": "2026-05-15T11:21:17.823491+00:00",
       "view_count": 114,
       "like_count": 2,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639637073695395080",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639637073695395080",
+      "title": "男の乾燥を徹底ブロック！アスタリフト メンから新作の保湿液が登場しました。夕方まで潤いが続く秘密は、4種の厳選保護成分にあります。朝晩のケ...",
+      "detected_at": "2026-05-14T22:17:36.838225+00:00",
+      "analytics_collected_at": "2026-05-15T22:27:09.432106+00:00",
+      "view_count": 208,
+      "like_count": 4,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
