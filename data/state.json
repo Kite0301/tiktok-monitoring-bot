@@ -100,15 +100,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7639645470012312850",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639645470012312850",
-      "detected_at": "2026-05-15T04:42:49.567282+00:00",
-      "analytics_due_at": "2026-05-16T04:42:49.567282+00:00",
-      "title": "未経験でも迷わない、1本で保湿が完結する新習慣。忙しい朝もこれだけで清潔感を手に入れられます。富士フイルムのナノ技術を応用したとろみ液が、...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7639649697476693266",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7639649697476693266",
@@ -1134,6 +1125,19 @@
       "analytics_collected_at": "2026-05-15T22:27:09.432106+00:00",
       "view_count": 208,
       "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639645470012312850",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639645470012312850",
+      "title": "未経験でも迷わない、1本で保湿が完結する新習慣。忙しい朝もこれだけで清潔感を手に入れられます。富士フイルムのナノ技術を応用したとろみ液が、...",
+      "detected_at": "2026-05-15T04:42:49.567282+00:00",
+      "analytics_collected_at": "2026-05-16T05:21:05.902106+00:00",
+      "view_count": 277,
+      "like_count": 3,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
