@@ -102,15 +102,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7639686772393250066",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639686772393250066",
-      "detected_at": "2026-05-16T10:23:40.769979+00:00",
-      "analytics_due_at": "2026-05-17T10:23:40.769979+00:00",
-      "title": "乾燥を繰り返す男の肌を救う、最強の保湿液が登場！冬の乾燥対策に悩んでいる人は、永久保存版としてチェックしてください。独自のWヒト型ナノセラ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7639687144415677714",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7639687144415677714",
@@ -1170,6 +1161,19 @@
       "analytics_collected_at": "2026-05-17T04:44:01.029366+00:00",
       "view_count": 541,
       "like_count": 2,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639686772393250066",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639686772393250066",
+      "title": "乾燥を繰り返す男の肌を救う、最強の保湿液が登場！冬の乾燥対策に悩んでいる人は、永久保存版としてチェックしてください。独自のWヒト型ナノセラ...",
+      "detected_at": "2026-05-16T10:23:40.769979+00:00",
+      "analytics_collected_at": "2026-05-17T10:40:03.492890+00:00",
+      "view_count": 168,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
