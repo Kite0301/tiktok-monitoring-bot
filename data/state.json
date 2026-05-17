@@ -100,17 +100,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7639687144415677714",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7639687144415677714",
-      "detected_at": "2026-05-16T22:14:28.899907+00:00",
-      "analytics_due_at": "2026-05-17T22:14:28.899907+00:00",
-      "title": "アスタリフト メンすごすぎた！乾きを繰り返す男の肌、本気で向き合うならこれ。乾燥ループを遮断して潤いキープ。ヒゲ剃りや紫外線によるダメージ...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -1174,6 +1164,19 @@
       "analytics_collected_at": "2026-05-17T10:40:03.492890+00:00",
       "view_count": 168,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7639687144415677714",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7639687144415677714",
+      "title": "アスタリフト メンすごすぎた！乾きを繰り返す男の肌、本気で向き合うならこれ。乾燥ループを遮断して潤いキープ。ヒゲ剃りや紫外線によるダメージ...",
+      "detected_at": "2026-05-16T22:14:28.899907+00:00",
+      "analytics_collected_at": "2026-05-17T22:18:24.562920+00:00",
+      "view_count": 185,
+      "like_count": 2,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
