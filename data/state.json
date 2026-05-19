@@ -107,15 +107,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7641082798798818580",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7641082798798818580",
-      "detected_at": "2026-05-18T10:39:06.714808+00:00",
-      "analytics_due_at": "2026-05-19T10:39:06.714808+00:00",
-      "title": "繰り返す肌の乾燥という深い闇。独自成分で角層の潤いを守るケアを始めませんか？ナノ化したヒト型セラミドが角層の隅々まで浸透し、肌を潤いで満た...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7641088397817220373",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7641088397817220373",
@@ -1235,6 +1226,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7641082798798818580",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7641082798798818580",
+      "title": "繰り返す肌の乾燥という深い闇。独自成分で角層の潤いを守るケアを始めませんか？ナノ化したヒト型セラミドが角層の隅々まで浸透し、肌を潤いで満た...",
+      "detected_at": "2026-05-18T10:39:06.714808+00:00",
+      "analytics_collected_at": "2026-05-19T11:18:48.445278+00:00",
+      "view_count": 222,
+      "like_count": 3,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
