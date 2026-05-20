@@ -111,15 +111,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7641515134120201492",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7641515134120201492",
-      "detected_at": "2026-05-19T22:12:17.857214+00:00",
-      "analytics_due_at": "2026-05-20T22:12:17.857214+00:00",
-      "title": "スキンケアがめんどくさい方必見！これ一本で繰り返す乾燥ループを即ブロックして、一日中うるおいをキープ。朝晩の使用で夕方まで乾燥を感じにくい...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7641516545721617684",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7641516545721617684",
@@ -1287,6 +1278,19 @@
       "detected_at": "2026-05-19T10:06:39.620393+00:00",
       "analytics_collected_at": "2026-05-20T12:08:05.189275+00:00",
       "view_count": 125,
+      "like_count": 2,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7641515134120201492",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7641515134120201492",
+      "title": "スキンケアがめんどくさい方必見！これ一本で繰り返す乾燥ループを即ブロックして、一日中うるおいをキープ。朝晩の使用で夕方まで乾燥を感じにくい...",
+      "detected_at": "2026-05-19T22:12:17.857214+00:00",
+      "analytics_collected_at": "2026-05-20T22:19:31.217700+00:00",
+      "view_count": 176,
       "like_count": 2,
       "comment_count": 0,
       "repost_count": 0,
