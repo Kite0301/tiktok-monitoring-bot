@@ -110,15 +110,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7641510249148484885",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7641510249148484885",
-      "detected_at": "2026-05-19T10:06:39.620393+00:00",
-      "analytics_due_at": "2026-05-20T10:06:39.620393+00:00",
-      "title": "乾燥する季節のスキンケア迷子、もうこれで解決。メンズ保湿液の正解を見つけました。爽やかなフローラルグリーンの香りで清潔感のある印象に。とろ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7641515134120201492",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7641515134120201492",
@@ -1274,6 +1265,19 @@
       "analytics_collected_at": "2026-05-20T04:50:40.767358+00:00",
       "view_count": 88,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7641510249148484885",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7641510249148484885",
+      "title": "乾燥する季節のスキンケア迷子、もうこれで解決。メンズ保湿液の正解を見つけました。爽やかなフローラルグリーンの香りで清潔感のある印象に。とろ...",
+      "detected_at": "2026-05-19T10:06:39.620393+00:00",
+      "analytics_collected_at": "2026-05-20T12:08:05.189275+00:00",
+      "view_count": 125,
+      "like_count": 2,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
