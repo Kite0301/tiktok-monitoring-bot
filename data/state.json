@@ -115,15 +115,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7641882135653076245",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7641882135653076245",
-      "detected_at": "2026-05-21T04:59:22.543707+00:00",
-      "analytics_due_at": "2026-05-22T04:59:22.543707+00:00",
-      "title": "最新版、メンズ保湿はこれ一択。繰り返す乾燥を根本からブロック。ヒゲ剃りや紫外線による男性特有の乾燥ループを強力に遮断します。チャ葉エキスな...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7642274001926098184",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7642274001926098184",
@@ -1343,6 +1334,19 @@
       "detected_at": "2026-05-20T22:16:17.568009+00:00",
       "analytics_collected_at": "2026-05-21T22:25:27.111055+00:00",
       "view_count": 112,
+      "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7641882135653076245",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7641882135653076245",
+      "title": "最新版、メンズ保湿はこれ一択。繰り返す乾燥を根本からブロック。ヒゲ剃りや紫外線による男性特有の乾燥ループを強力に遮断します。チャ葉エキスな...",
+      "detected_at": "2026-05-21T04:59:22.543707+00:00",
+      "analytics_collected_at": "2026-05-22T06:17:48.257284+00:00",
+      "view_count": 107,
       "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
