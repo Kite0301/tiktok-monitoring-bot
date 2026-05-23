@@ -119,15 +119,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7642566714571394322",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7642566714571394322",
-      "detected_at": "2026-05-22T10:56:23.129346+00:00",
-      "analytics_due_at": "2026-05-23T10:56:23.129346+00:00",
-      "title": "男の乾燥肌に革命！アスタリフトメンの保湿力が想像以上でした。チャ葉エキスなど4種の成分が外部刺激から角層を保護。とろみがあるのに肌にすぐ馴...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7642568304099413256",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7642568304099413256",
@@ -1400,6 +1391,19 @@
       "analytics_collected_at": "2026-05-23T05:48:16.492540+00:00",
       "view_count": 193,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7642566714571394322",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7642566714571394322",
+      "title": "男の乾燥肌に革命！アスタリフトメンの保湿力が想像以上でした。チャ葉エキスなど4種の成分が外部刺激から角層を保護。とろみがあるのに肌にすぐ馴...",
+      "detected_at": "2026-05-22T10:56:23.129346+00:00",
+      "analytics_collected_at": "2026-05-23T11:36:30.117591+00:00",
+      "view_count": 117,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
