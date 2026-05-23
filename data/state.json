@@ -118,15 +118,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7642279158285913362",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7642279158285913362",
-      "detected_at": "2026-05-22T04:48:38.321784+00:00",
-      "analytics_due_at": "2026-05-23T04:48:38.321784+00:00",
-      "title": "ついに登場！アスタリフト メンから待望の新作保湿液が発売されました。メンズ諸君、お待たせしました。富士フイルム独自のナノ技術で成分を角層ま...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7642566714571394322",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7642566714571394322",
@@ -1386,6 +1377,19 @@
       "analytics_collected_at": "2026-05-22T22:40:12.590660+00:00",
       "view_count": 160,
       "like_count": 3,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7642279158285913362",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7642279158285913362",
+      "title": "ついに登場！アスタリフト メンから待望の新作保湿液が発売されました。メンズ諸君、お待たせしました。富士フイルム独自のナノ技術で成分を角層ま...",
+      "detected_at": "2026-05-22T04:48:38.321784+00:00",
+      "analytics_collected_at": "2026-05-23T05:48:16.492540+00:00",
+      "view_count": 193,
+      "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
