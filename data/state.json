@@ -120,15 +120,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7642568304099413256",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7642568304099413256",
-      "detected_at": "2026-05-22T22:11:51.435741+00:00",
-      "analytics_due_at": "2026-05-23T22:11:51.435741+00:00",
-      "title": "あのアスタリフトから待望のメンズ版が登場。潤いを逃がさない実力派の保湿液、もうチェックした？フローラルグリーンの爽やかな香りで清潔感もアッ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7642570244506078482",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7642570244506078482",
@@ -1414,6 +1405,19 @@
       "analytics_collected_at": "2026-05-23T11:36:30.117591+00:00",
       "view_count": 117,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7642568304099413256",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7642568304099413256",
+      "title": "あのアスタリフトから待望のメンズ版が登場。潤いを逃がさない実力派の保湿液、もうチェックした？フローラルグリーンの爽やかな香りで清潔感もアッ...",
+      "detected_at": "2026-05-22T22:11:51.435741+00:00",
+      "analytics_collected_at": "2026-05-23T22:24:34.315915+00:00",
+      "view_count": 417,
+      "like_count": 5,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
