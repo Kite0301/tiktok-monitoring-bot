@@ -122,15 +122,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7642575939011939602",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7642575939011939602",
-      "detected_at": "2026-05-23T22:23:21.120465+00:00",
-      "analytics_due_at": "2026-05-24T22:23:21.120465+00:00",
-      "title": "深すぎる闇にハマる、男の乾燥ループ。新作アスタリフトで、肌の潤いをしっかり閉じ込めませんか？とろみがあるのに肌にすぐ馴染むから、ベタつきが...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7642578781571452168",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7642578781571452168",
@@ -1446,6 +1437,19 @@
       "analytics_collected_at": "2026-05-24T11:01:00.677684+00:00",
       "view_count": 148,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7642575939011939602",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7642575939011939602",
+      "title": "深すぎる闇にハマる、男の乾燥ループ。新作アスタリフトで、肌の潤いをしっかり閉じ込めませんか？とろみがあるのに肌にすぐ馴染むから、ベタつきが...",
+      "detected_at": "2026-05-23T22:23:21.120465+00:00",
+      "analytics_collected_at": "2026-05-24T22:37:42.875415+00:00",
+      "view_count": 234,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
