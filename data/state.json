@@ -122,15 +122,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7642573503371201810",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7642573503371201810",
-      "detected_at": "2026-05-23T10:35:27.668241+00:00",
-      "analytics_due_at": "2026-05-24T10:35:27.668241+00:00",
-      "title": "男性の繰り返す乾燥、正しい保湿でブロックしませんか？富士フイルムのナノ技術を応用した本格スキンケア。独自の技術で成分を極小化し、角層のすみ...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7642575939011939602",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7642575939011939602",
@@ -1442,6 +1433,19 @@
       "analytics_collected_at": "2026-05-24T04:49:54.337504+00:00",
       "view_count": 186,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7642573503371201810",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7642573503371201810",
+      "title": "男性の繰り返す乾燥、正しい保湿でブロックしませんか？富士フイルムのナノ技術を応用した本格スキンケア。独自の技術で成分を極小化し、角層のすみ...",
+      "detected_at": "2026-05-23T10:35:27.668241+00:00",
+      "analytics_collected_at": "2026-05-24T11:01:00.677684+00:00",
+      "view_count": 148,
+      "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
