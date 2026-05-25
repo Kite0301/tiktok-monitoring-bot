@@ -122,15 +122,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7642578781571452168",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7642578781571452168",
-      "detected_at": "2026-05-24T04:40:51.439951+00:00",
-      "analytics_due_at": "2026-05-25T04:40:51.439951+00:00",
-      "title": "SNSで大バズり中のアスタリフト「モノム」！ナノセラミド配合で潤いが続く保湿液です。二回目以降は低価格なレフィル形式で、環境にも財布にも優...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7642582660912614663",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7642582660912614663",
@@ -1450,6 +1441,19 @@
       "analytics_collected_at": "2026-05-24T22:37:42.875415+00:00",
       "view_count": 234,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7642578781571452168",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7642578781571452168",
+      "title": "SNSで大バズり中のアスタリフト「モノム」！ナノセラミド配合で潤いが続く保湿液です。二回目以降は低価格なレフィル形式で、環境にも財布にも優...",
+      "detected_at": "2026-05-24T04:40:51.439951+00:00",
+      "analytics_collected_at": "2026-05-25T05:17:59.714951+00:00",
+      "view_count": 156,
+      "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
