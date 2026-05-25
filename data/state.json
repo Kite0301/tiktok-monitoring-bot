@@ -123,15 +123,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7642582660912614663",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7642582660912614663",
-      "detected_at": "2026-05-24T10:23:34.518178+00:00",
-      "analytics_due_at": "2026-05-25T10:23:34.518178+00:00",
-      "title": "乾燥スパイラルを断ち切る、メンズ保湿の決定版が登場。髭剃り後のヒリつきやカサつき、気になりませんか？アスタリフト メンのモノムは、独自の成...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7643737431098985748",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7643737431098985748",
@@ -1467,6 +1458,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7642582660912614663",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7642582660912614663",
+      "title": "乾燥スパイラルを断ち切る、メンズ保湿の決定版が登場。髭剃り後のヒリつきやカサつき、気になりませんか？アスタリフト メンのモノムは、独自の成...",
+      "detected_at": "2026-05-24T10:23:34.518178+00:00",
+      "analytics_collected_at": "2026-05-25T11:15:32.075958+00:00",
+      "view_count": 192,
+      "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
