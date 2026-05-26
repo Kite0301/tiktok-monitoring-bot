@@ -126,15 +126,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7643737806199852308",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7643737806199852308",
-      "detected_at": "2026-05-25T22:15:33.987267+00:00",
-      "analytics_due_at": "2026-05-26T22:15:33.987267+00:00",
-      "title": "SNSで大バズり中！乾燥に悩む男性の新常識、アスタリフト メンの保湿液が登場。富士フイルムの独自技術で極小化したWヒト型ナノセラミドが、角...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7644088460701125909",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7644088460701125909",
@@ -1501,6 +1492,19 @@
       "detected_at": "2026-05-25T11:08:02.152598+00:00",
       "analytics_collected_at": "2026-05-26T13:36:08.765416+00:00",
       "view_count": 164,
+      "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7643737806199852308",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7643737806199852308",
+      "title": "SNSで大バズり中！乾燥に悩む男性の新常識、アスタリフト メンの保湿液が登場。富士フイルムの独自技術で極小化したWヒト型ナノセラミドが、角...",
+      "detected_at": "2026-05-25T22:15:33.987267+00:00",
+      "analytics_collected_at": "2026-05-26T22:26:40.780676+00:00",
+      "view_count": 121,
       "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
