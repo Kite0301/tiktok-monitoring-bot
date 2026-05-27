@@ -127,15 +127,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7644088460701125909",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7644088460701125909",
-      "detected_at": "2026-05-26T10:14:39.904514+00:00",
-      "analytics_due_at": "2026-05-27T10:14:39.904514+00:00",
-      "title": "繰り返す乾燥肌に悩んでいませんか？アスタリフト メンなら一日中潤いが続きます。敏感肌パッチテスト済みで、デリケートな肌の方も毎日心地よく使...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7644117731985804564",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7644117731985804564",
@@ -1516,6 +1507,19 @@
       "analytics_collected_at": "2026-05-26T22:26:40.780676+00:00",
       "view_count": 121,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7644088460701125909",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7644088460701125909",
+      "title": "繰り返す乾燥肌に悩んでいませんか？アスタリフト メンなら一日中潤いが続きます。敏感肌パッチテスト済みで、デリケートな肌の方も毎日心地よく使...",
+      "detected_at": "2026-05-26T10:14:39.904514+00:00",
+      "analytics_collected_at": "2026-05-27T10:48:17.156576+00:00",
+      "view_count": 115,
+      "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
