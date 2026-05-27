@@ -127,15 +127,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7644117731985804564",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7644117731985804564",
-      "detected_at": "2026-05-26T22:24:07.991550+00:00",
-      "analytics_due_at": "2026-05-27T22:24:07.991550+00:00",
-      "title": "値段以上の完成度に驚き！アスタリフトのメンズ用保湿液が、機能も使い心地も予想を上回るクオリティです。チャ葉エキスなど4種の厳選成分が、外部...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7644118080477613332",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7644118080477613332",
@@ -1520,6 +1511,19 @@
       "analytics_collected_at": "2026-05-27T10:48:17.156576+00:00",
       "view_count": 115,
       "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7644117731985804564",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7644117731985804564",
+      "title": "値段以上の完成度に驚き！アスタリフトのメンズ用保湿液が、機能も使い心地も予想を上回るクオリティです。チャ葉エキスなど4種の厳選成分が、外部...",
+      "detected_at": "2026-05-26T22:24:07.991550+00:00",
+      "analytics_collected_at": "2026-05-27T22:41:44.709188+00:00",
+      "view_count": 178,
+      "like_count": 1,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
