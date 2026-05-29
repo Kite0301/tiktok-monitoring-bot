@@ -129,15 +129,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7644859942024826133",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7644859942024826133",
-      "detected_at": "2026-05-28T08:55:10.667291+00:00",
-      "analytics_due_at": "2026-05-29T08:55:10.667291+00:00",
-      "title": "「夕方になると肌がカサつく…」そんな乾燥ループを阻止しませんか？潤いを守り抜く最新保湿液が登場。朝晩の使用で一日中潤いが持続し、夕方まで乾...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7644860633103486228",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7644860633103486228",
@@ -1551,6 +1542,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 1
+    },
+    {
+      "video_id": "7644859942024826133",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7644859942024826133",
+      "title": "「夕方になると肌がカサつく…」そんな乾燥ループを阻止しませんか？潤いを守り抜く最新保湿液が登場。朝晩の使用で一日中潤いが持続し、夕方まで乾...",
+      "detected_at": "2026-05-28T08:55:10.667291+00:00",
+      "analytics_collected_at": "2026-05-29T09:20:56.081763+00:00",
+      "view_count": 133,
+      "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
     }
   ]
 }
