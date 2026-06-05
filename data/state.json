@@ -132,15 +132,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7647442245372726548",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7647442245372726548",
-      "detected_at": "2026-06-04T11:13:12.173981+00:00",
-      "analytics_due_at": "2026-06-05T11:13:12.173981+00:00",
-      "title": "この動画が流れた人ラッキー！一日中潤いが続くメンズ専用の保湿ケア、アスタリフト メン モノムをご紹介。朝晩のケアだけで、忙しい夕方まで乾燥...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7647456652282662165",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7647456652282662165",
@@ -1589,6 +1580,19 @@
       "detected_at": "2026-06-04T08:36:28.569498+00:00",
       "analytics_collected_at": "2026-06-05T09:24:50.250591+00:00",
       "view_count": 99,
+      "like_count": 0,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7647442245372726548",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7647442245372726548",
+      "title": "この動画が流れた人ラッキー！一日中潤いが続くメンズ専用の保湿ケア、アスタリフト メン モノムをご紹介。朝晩のケアだけで、忙しい夕方まで乾燥...",
+      "detected_at": "2026-06-04T11:13:12.173981+00:00",
+      "analytics_collected_at": "2026-06-05T11:51:29.016094+00:00",
+      "view_count": 84,
       "like_count": 0,
       "comment_count": 0,
       "repost_count": 0,
