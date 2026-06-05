@@ -130,17 +130,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7647456652282662165",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7647456652282662165",
-      "detected_at": "2026-06-04T22:07:16.750929+00:00",
-      "analytics_due_at": "2026-06-05T22:07:16.750929+00:00",
-      "title": "乾燥に悩むメンズ必見！この動画に出会えた人はラッキー。最強の保湿液、アスタリフト メンのモノムをご紹介します。朝晩使うだけで忙しい夕方まで...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -1595,6 +1585,19 @@
       "view_count": 84,
       "like_count": 0,
       "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7647456652282662165",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7647456652282662165",
+      "title": "乾燥に悩むメンズ必見！この動画に出会えた人はラッキー。最強の保湿液、アスタリフト メンのモノムをご紹介します。朝晩使うだけで忙しい夕方まで...",
+      "detected_at": "2026-06-04T22:07:16.750929+00:00",
+      "analytics_collected_at": "2026-06-05T22:13:55.684873+00:00",
+      "view_count": 464,
+      "like_count": 5,
+      "comment_count": 1,
       "repost_count": 0,
       "save_count": 0
     }
