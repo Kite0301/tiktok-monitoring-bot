@@ -134,15 +134,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7649290532803579156",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7649290532803579156",
-      "detected_at": "2026-06-09T08:46:38.980257+00:00",
-      "analytics_due_at": "2026-06-10T08:46:38.980257+00:00",
-      "title": "カサつきループ、放置してない？今1番使うべきメンズケア、アスタリフトメンで乾燥を根本から断ちましょう。男特有の乾燥ループを遮断し、とろみが...",
-      "retry_count": 0
-    },
-    {
       "video_id": "7649627846251433237",
       "username": "@monom_fan",
       "video_url": "https://www.tiktok.com/@monom_fan/video/7649627846251433237",
@@ -1619,6 +1610,19 @@
       "view_count": 464,
       "like_count": 5,
       "comment_count": 1,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7649290532803579156",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7649290532803579156",
+      "title": "カサつきループ、放置してない？今1番使うべきメンズケア、アスタリフトメンで乾燥を根本から断ちましょう。男特有の乾燥ループを遮断し、とろみが...",
+      "detected_at": "2026-06-09T08:46:38.980257+00:00",
+      "analytics_collected_at": "2026-06-10T09:28:52.057982+00:00",
+      "view_count": 346,
+      "like_count": 7,
+      "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
     }
