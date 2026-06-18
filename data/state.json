@@ -133,17 +133,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7652265470728424724",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7652265470728424724",
-      "detected_at": "2026-06-17T09:05:51.547394+00:00",
-      "analytics_due_at": "2026-06-18T09:05:51.547394+00:00",
-      "title": "セブンイレブンの激うま抹茶チョコレート！！ #セブンイレブン #ザクザククランチチョコ ",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -1636,6 +1626,19 @@
       "analytics_collected_at": "2026-06-11T07:03:07.744493+00:00",
       "view_count": 119,
       "like_count": 1,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7652265470728424724",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7652265470728424724",
+      "title": "セブンイレブンの激うま抹茶チョコレート！！ #セブンイレブン #ザクザククランチチョコ ",
+      "detected_at": "2026-06-17T09:05:51.547394+00:00",
+      "analytics_collected_at": "2026-06-18T09:57:28.633417+00:00",
+      "view_count": 1010,
+      "like_count": 3,
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
