@@ -50,6 +50,16 @@ GitHub Actions を使って TikTok アカウントの新規投稿を自動検知
 
 > アカウント名は必ず `@` から始めてください。
 
+## ワークフロー一覧
+
+| ワークフロー | スケジュール | 説明 |
+|---|---|---|
+| `monitor.yml` | 5 分ごと | 登録 TikTok アカウントを巡回し、新規投稿を検知して Slack へ通知 |
+| `analytics.yml` | 5 分ごと | 検知済み動画の 24 時間後パフォーマンス指標を収集して Slack へ報告 |
+| `weekly-report.yml` | 毎週月曜 9:00 JST | 稼働状況サマリーと監視アカウント一覧を Slack へ送信 |
+| `keepalive.yml` | 毎月 1 日 0:00 UTC | **GitHub のスケジュールワークフロー自動無効化を防ぐ**。GitHub はリポジトリに 60 日間アクティビティがない場合、スケジュール (`on.schedule`) ワークフローを自動的に無効化します。このワークフローは [gautamkrishnar/keepalive-workflow](https://github.com/gautamkrishnar/keepalive-workflow) を使い、毎月 GitHub API 経由でリポジトリのアクティビティを更新することで、他のワークフローが無効化されないように維持します。 |
+| `test-slack.yml` | 手動実行 | Slack 通知の疎通確認 |
+
 ## ディレクトリ構成
 
 ```
@@ -59,7 +69,7 @@ GitHub Actions を使って TikTok アカウントの新規投稿を自動検知
 │       ├── monitor.yml        # 新規投稿検知ワークフロー（5 分ごと）
 │       ├── analytics.yml      # 24h アナリティクスワークフロー（5 分ごと）
 │       ├── weekly-report.yml  # 週次レポートワークフロー（毎週月曜 9:00 JST）
-│       ├── keepalive.yml      # ワークフロー自動有効化維持
+│       ├── keepalive.yml      # スケジュールワークフローの自動無効化防止（毎月 1 日）
 │       └── test-slack.yml     # Slack 通知テスト
 ├── config/
 │   └── accounts.json          # 監視対象アカウント一覧
