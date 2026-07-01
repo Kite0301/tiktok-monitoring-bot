@@ -134,17 +134,7 @@
       ]
     }
   },
-  "pending_analytics": [
-    {
-      "video_id": "7657091993411128597",
-      "username": "@monom_fan",
-      "video_url": "https://www.tiktok.com/@monom_fan/video/7657091993411128597",
-      "detected_at": "2026-06-30T08:46:11.503243+00:00",
-      "analytics_due_at": "2026-07-01T08:46:11.503243+00:00",
-      "title": "男の乾燥対策、本当に足りてる？実は大切な保湿液があるんです。4種の保護成分が外部刺激から男の角層を整え、フローラルグリーンの香りで爽やかな...",
-      "retry_count": 0
-    }
-  ],
+  "pending_analytics": [],
   "completed_analytics": [
     {
       "video_id": "7609344313792679188",
@@ -1653,6 +1643,19 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7657091993411128597",
+      "username": "@monom_fan",
+      "video_url": "https://www.tiktok.com/@monom_fan/video/7657091993411128597",
+      "title": "男の乾燥対策、本当に足りてる？実は大切な保湿液があるんです。4種の保護成分が外部刺激から男の角層を整え、フローラルグリーンの香りで爽やかな...",
+      "detected_at": "2026-06-30T08:46:11.503243+00:00",
+      "analytics_collected_at": "2026-07-01T09:37:09.076472+00:00",
+      "view_count": 213,
+      "like_count": 4,
+      "comment_count": 0,
+      "repost_count": 1,
+      "save_count": 1
     }
   ]
 }
