@@ -8,6 +8,16 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
+# Slack rejects a section text longer than 3000 chars; yt-dlp errors can be
+# far longer than that.
+_MAX_DETAIL_CHARS = 800
+
+
+def _truncate(text: str) -> str:
+    if len(text) <= _MAX_DETAIL_CHARS:
+        return text
+    return text[:_MAX_DETAIL_CHARS] + " …(以下省略)"
+
 
 class SlackNotificationError(Exception):
     """Raised when a Slack notification fails."""
@@ -235,6 +245,77 @@ class SlackNotifier:
                             f"{account_list}"
                         ),
                     },
+                },
+            ],
+        }
+        self._send(payload)
+
+    def notify_account_failure(
+        self,
+        username: str,
+        summary: str,
+        detail: str,
+        consecutive_failures: int,
+    ) -> None:
+        """Alert that an account has failed extraction repeatedly."""
+        payload = {
+            "text": f"⚠️ 取得エラーが継続: {username} - {summary}",
+            "blocks": [
+                {
+                    "type": "header",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "⚠️ 投稿の取得に失敗し続けています",
+                        "emoji": True,
+                    },
+                },
+                {
+                    "type": "section",
+                    "fields": [
+                        {"type": "mrkdwn", "text": f"*アカウント:*\n{username}"},
+                        {
+                            "type": "mrkdwn",
+                            "text": f"*連続失敗回数:*\n{consecutive_failures} 回",
+                        },
+                    ],
+                },
+                {
+                    "type": "section",
+                    "text": {"type": "mrkdwn", "text": f"*考えられる原因:*\n{summary}"},
+                },
+                {
+                    "type": "section",
+                    "text": {"type": "mrkdwn", "text": f"```{_truncate(detail)}```"},
+                },
+                {
+                    "type": "context",
+                    "elements": [
+                        {
+                            "type": "mrkdwn",
+                            "text": "この通知は復旧するまで再送しません。復旧時にあらためて通知します。",
+                        }
+                    ],
+                },
+            ],
+        }
+        self._send(payload)
+
+    def notify_account_recovery(self, username: str) -> None:
+        """Notify that a previously failing account is working again."""
+        payload = {
+            "text": f"✅ 取得が復旧: {username}",
+            "blocks": [
+                {
+                    "type": "header",
+                    "text": {
+                        "type": "plain_text",
+                        "text": "✅ 投稿の取得が復旧しました",
+                        "emoji": True,
+                    },
+                },
+                {
+                    "type": "section",
+                    "text": {"type": "mrkdwn", "text": f"*アカウント:*\n{username}"},
                 },
             ],
         }
