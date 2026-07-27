@@ -3,9 +3,8 @@
 Checks pending_analytics for due items, collects metrics via yt-dlp,
 and sends Slack notifications with the results.
 
-Uses 2-layer storage:
-- Persistent state (data/state.json, git): pending/completed analytics
-- Ephemeral state (data/ephemeral.json, Actions cache): timestamps only
+State (pending/completed analytics) is persisted in data/state.json
+and committed to git.
 
 Exit codes:
     0 = Success
@@ -21,7 +20,6 @@ from pathlib import Path
 # Add src/ to path for imports
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from cache_manager import load_ephemeral, save_ephemeral
 from config import load_config
 from slack_notifier import SlackNotifier
 from state_manager import (
@@ -85,7 +83,6 @@ def main() -> int:
 
     state = load_state(config.state_file_path)
     original_snapshot = serialize_state(state)
-    ephemeral = load_ephemeral(config.ephemeral_file_path)
     notifier = SlackNotifier(config.slack_webhook_url)
     client = TikTokClient()
     now = datetime.now(timezone.utc)
@@ -181,9 +178,6 @@ def main() -> int:
     completed = state.get("completed_analytics", [])
     if len(completed) > config.max_completed_history:
         state["completed_analytics"] = completed[-config.max_completed_history:]
-
-    # Always save ephemeral state — NOT committed to git
-    save_ephemeral(ephemeral, config.ephemeral_file_path)
 
     # Only save and commit persistent state if meaningfully changed
     new_snapshot = serialize_state(state)

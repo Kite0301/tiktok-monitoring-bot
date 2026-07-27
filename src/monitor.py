@@ -3,9 +3,8 @@
 Checks each configured TikTok account for new posts, sends Slack
 notifications, and registers 24-hour analytics follow-up jobs.
 
-Uses 2-layer storage:
-- Persistent state (data/state.json, git): known_video_ids, pending/completed analytics
-- Ephemeral state (data/ephemeral.json, Actions cache): timestamps, failure counters
+State (known_video_ids, pending/completed analytics) is persisted in
+data/state.json and committed to git.
 
 Exit codes:
     0 = Success
@@ -21,7 +20,6 @@ from pathlib import Path
 # Add src/ to path for imports
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from cache_manager import get_account_ephemeral, load_ephemeral, save_ephemeral
 from config import load_config
 from slack_notifier import SlackNotifier
 from state_manager import (
@@ -82,7 +80,6 @@ def main() -> int:
 
     state = load_state(config.state_file_path)
     original_snapshot = serialize_state(state)
-    ephemeral = load_ephemeral(config.ephemeral_file_path)
     notifier = SlackNotifier(config.slack_webhook_url)
     client = TikTokClient()
     now = datetime.now(timezone.utc)
@@ -95,7 +92,6 @@ def main() -> int:
             }
 
         account = state["accounts"][username]
-        acct_ephemeral = get_account_ephemeral(ephemeral, username)
 
         try:
             videos = client.list_recent_videos(username)
@@ -144,47 +140,16 @@ def main() -> int:
                     except Exception as e:
                         logger.error(f"Slack notification failed: {e}")
 
-            # Update ephemeral state (timestamps, success tracking)
-            acct_ephemeral["last_checked"] = now.isoformat()
-            acct_ephemeral["last_check_success"] = True
-            acct_ephemeral["consecutive_failures"] = 0
-
         except AccountNotFoundError as e:
             logger.warning(f"Account not found: {username}: {e}")
-            acct_ephemeral["consecutive_failures"] = (
-                acct_ephemeral.get("consecutive_failures", 0) + 1
-            )
-            acct_ephemeral["last_checked"] = now.isoformat()
-            acct_ephemeral["last_check_success"] = False
-            if acct_ephemeral["consecutive_failures"] >= 5:
-                try:
-                    notifier.notify_error(
-                        f"アカウント {username} が5回連続で取得失敗。"
-                        f"アカウントが存在しないか、非公開の可能性があります。"
-                    )
-                except Exception:
-                    pass
 
         except TikTokClientError as e:
             logger.warning(f"TikTok extraction failed for {username}: {e}")
-            acct_ephemeral["consecutive_failures"] = (
-                acct_ephemeral.get("consecutive_failures", 0) + 1
-            )
-            acct_ephemeral["last_checked"] = now.isoformat()
-            acct_ephemeral["last_check_success"] = False
 
         except Exception as e:
             logger.error(
                 f"Unexpected error for {username}: {e}", exc_info=True
             )
-            acct_ephemeral["consecutive_failures"] = (
-                acct_ephemeral.get("consecutive_failures", 0) + 1
-            )
-            acct_ephemeral["last_checked"] = now.isoformat()
-            acct_ephemeral["last_check_success"] = False
-
-    # Always save ephemeral state (timestamps etc.) — NOT committed to git
-    save_ephemeral(ephemeral, config.ephemeral_file_path)
 
     # Only save and commit persistent state if meaningfully changed
     new_snapshot = serialize_state(state)

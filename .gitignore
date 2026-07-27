@@ -1,6 +1,3 @@
-# Ephemeral state managed by Actions cache (not git)
-data/ephemeral.json
-
 # Python
 __pycache__/
 *.py[cod]

@@ -1,11 +1,10 @@
-"""Manage reading and writing of data/state.json (persistent state).
+"""Manage reading and writing of data/state.json.
 
-Persistent state only contains data that changes meaningfully:
+State only contains data that changes meaningfully, so that a run with
+nothing new to record produces no git commit:
 - known_video_ids per account
 - pending_analytics jobs
 - completed_analytics history
-
-Timestamps and failure counters live in ephemeral state (cache_manager.py).
 """
 
 import json
@@ -64,7 +63,6 @@ def save_state(state: State, path: str, max_completed: int = 200) -> None:
     """Write state to JSON file.
 
     Prunes completed_analytics if over the max_completed limit.
-    Does NOT include timestamps (those belong in ephemeral state).
     """
     # Prune old completed analytics
     completed = state.get("completed_analytics", [])
