@@ -1,46 +1,31 @@
-"""New post detection entry point.
+"""New post detection.
 
 Checks each configured TikTok account for new posts, sends Slack
 notifications, and registers 24-hour analytics follow-up jobs. Accounts
 that keep failing extraction are alerted on, once, until they recover.
 
-State (known_video_ids, pending/completed analytics, failure tracking)
-is persisted in data/state.json and committed to git.
-
-Exit codes:
-    0 = Success
-    1 = Unrecoverable error
+Mutates the state dict in place. Loading, saving and committing the state
+is run.py's responsibility, so that a single run writes it exactly once.
 """
 
 import logging
-import subprocess
-import sys
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 
-# Add src/ to path for imports
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-
-from config import load_config
+from config import Config
 from slack_notifier import SlackNotifier
-from state_manager import (
-    has_meaningful_change,
-    load_state,
-    save_state,
-    serialize_state,
+from state_manager import State
+from tiktok_client import (
+    AccountNotFoundError,
+    TikTokClient,
+    TikTokClientError,
 )
-from tiktok_client import AccountNotFoundError, TikTokClient, TikTokClientError
 
 JST = timezone(timedelta(hours=9))
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-)
 logger = logging.getLogger(__name__)
 
 
-def _get_account_state(state: dict, username: str) -> dict:
+def _get_account_state(state: State, username: str) -> dict:
     """Get or initialize persistent state for one account."""
     account = state["accounts"].setdefault(username, {})
     account.setdefault("known_video_ids", [])
@@ -104,50 +89,19 @@ def _record_success(
         logger.error(f"Slack recovery notification failed for {username}: {e}")
 
 
-def git_commit_and_push(message: str) -> None:
-    """Commit the state file and push to origin.
+def check_new_posts(
+    state: State,
+    config: Config,
+    notifier: SlackNotifier,
+    client: TikTokClient,
+    now: datetime,
+) -> int:
+    """Check every configured account for new posts.
 
-    Configures git user as github-actions[bot] for clean attribution.
+    Returns the number of new posts detected. A failure on one account is
+    logged and counted, but never stops the remaining accounts.
     """
-    subprocess.run(
-        ["git", "config", "user.name", "github-actions[bot]"], check=True
-    )
-    subprocess.run(
-        [
-            "git",
-            "config",
-            "user.email",
-            "41898282+github-actions[bot]@users.noreply.github.com",
-        ],
-        check=True,
-    )
-    subprocess.run(["git", "add", "data/state.json"], check=True)
-
-    # Check if there are actually staged changes
-    result = subprocess.run(
-        ["git", "diff", "--cached", "--quiet"], capture_output=True
-    )
-    if result.returncode == 0:
-        logger.info("No staged changes; skipping commit")
-        return
-
-    subprocess.run(["git", "commit", "-m", message], check=True)
-    subprocess.run(["git", "push"], check=True)
-
-
-def main() -> int:
-    """Main monitor logic."""
-    try:
-        config = load_config()
-    except (ValueError, FileNotFoundError) as e:
-        logger.error(f"Configuration error: {e}")
-        return 1
-
-    state = load_state(config.state_file_path)
-    original_snapshot = serialize_state(state)
-    notifier = SlackNotifier(config.slack_webhook_url)
-    client = TikTokClient()
-    now = datetime.now(timezone.utc)
+    new_post_count = 0
 
     for username in config.accounts:
         account = _get_account_state(state, username)
@@ -158,9 +112,7 @@ def main() -> int:
             new_videos = [v for v in videos if v.video_id not in known_ids]
 
             # On first run, record existing videos silently (no notifications)
-            is_first_run = len(known_ids) == 0
-
-            if is_first_run:
+            if len(known_ids) == 0:
                 logger.info(
                     f"First run for {username}: recording {len(videos)} "
                     f"existing videos without notification"
@@ -172,6 +124,7 @@ def main() -> int:
                         f"New post detected: {username} - {video.video_id}"
                     )
                     account["known_video_ids"].append(video.video_id)
+                    new_post_count += 1
 
                     analytics_due = now + timedelta(
                         hours=config.analytics_delay_hours
@@ -237,19 +190,4 @@ def main() -> int:
                 config.failure_alert_threshold,
             )
 
-    # Only save and commit persistent state if meaningfully changed
-    new_snapshot = serialize_state(state)
-    if has_meaningful_change(original_snapshot, new_snapshot):
-        save_state(state, config.state_file_path, config.max_completed_history)
-        try:
-            git_commit_and_push("Update state: monitor check")
-        except subprocess.CalledProcessError as e:
-            logger.error(f"Git commit/push failed: {e}")
-    else:
-        logger.info("No state changes; skipping commit")
-
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+    return new_post_count

@@ -1,36 +1,23 @@
-"""24-hour analytics collection entry point.
+"""24-hour analytics collection.
 
-Checks pending_analytics for due items, collects metrics via yt-dlp,
-and sends Slack notifications with the results.
+Checks pending_analytics for due items, collects metrics via yt-dlp, and
+sends Slack notifications with the results.
 
-State (pending/completed analytics) is persisted in data/state.json
-and committed to git.
-
-Exit codes:
-    0 = Success
-    1 = Unrecoverable error
+Mutates the state dict in place. Loading, saving and committing the state
+is run.py's responsibility, so that a single run writes it exactly once.
 """
 
 import logging
-import subprocess
-import sys
 from datetime import datetime, timedelta, timezone
-from pathlib import Path
 
-# Add src/ to path for imports
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-
-from config import load_config
+from config import Config
 from slack_notifier import SlackNotifier
-from state_manager import (
-    has_meaningful_change,
-    load_state,
-    save_state,
-    serialize_state,
-)
+from state_manager import State
 from tiktok_client import TikTokClient, TikTokClientError
 
 JST = timezone(timedelta(hours=9))
+
+logger = logging.getLogger(__name__)
 
 
 def _format_detected_at_jst(iso_str: str) -> str:
@@ -39,54 +26,33 @@ def _format_detected_at_jst(iso_str: str) -> str:
     return dt.astimezone(JST).strftime("%Y-%m-%d %H:%M JST")
 
 
-logging.basicConfig(
-    level=logging.INFO,
-    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
-)
-logger = logging.getLogger(__name__)
+def _completed_entry(job: dict, now: datetime, **metrics) -> dict:
+    """Build a completed_analytics record for a job."""
+    return {
+        "video_id": job["video_id"],
+        "username": job["username"],
+        "video_url": job["video_url"],
+        "title": job["title"],
+        "detected_at": job["detected_at"],
+        "analytics_collected_at": now.isoformat(),
+        **metrics,
+    }
 
 
-def git_commit_and_push(message: str) -> None:
-    """Commit the state file and push to origin."""
-    subprocess.run(
-        ["git", "config", "user.name", "github-actions[bot]"], check=True
-    )
-    subprocess.run(
-        [
-            "git",
-            "config",
-            "user.email",
-            "41898282+github-actions[bot]@users.noreply.github.com",
-        ],
-        check=True,
-    )
-    subprocess.run(["git", "add", "data/state.json"], check=True)
+def collect_due_analytics(
+    state: State,
+    config: Config,
+    notifier: SlackNotifier,
+    client: TikTokClient,
+    now: datetime,
+) -> int:
+    """Collect metrics for every pending job whose 24h window has elapsed.
 
-    result = subprocess.run(
-        ["git", "diff", "--cached", "--quiet"], capture_output=True
-    )
-    if result.returncode == 0:
-        logger.info("No staged changes; skipping commit")
-        return
-
-    subprocess.run(["git", "commit", "-m", message], check=True)
-    subprocess.run(["git", "push"], check=True)
-
-
-def main() -> int:
-    """Main analytics collection logic."""
-    try:
-        config = load_config()
-    except (ValueError, FileNotFoundError) as e:
-        logger.error(f"Configuration error: {e}")
-        return 1
-
-    state = load_state(config.state_file_path)
-    original_snapshot = serialize_state(state)
-    notifier = SlackNotifier(config.slack_webhook_url)
-    client = TikTokClient()
-    now = datetime.now(timezone.utc)
-
+    Returns the number of jobs whose metrics were successfully collected.
+    Jobs that fail are retried on later runs until max_analytics_retries,
+    after which they are recorded with null metrics.
+    """
+    collected_count = 0
     still_pending: list[dict] = []
 
     for job in state["pending_analytics"]:
@@ -104,20 +70,17 @@ def main() -> int:
             analytics = client.get_video_analytics(job["video_url"])
 
             state["completed_analytics"].append(
-                {
-                    "video_id": job["video_id"],
-                    "username": job["username"],
-                    "video_url": job["video_url"],
-                    "title": job["title"],
-                    "detected_at": job["detected_at"],
-                    "analytics_collected_at": now.isoformat(),
-                    "view_count": analytics.view_count,
-                    "like_count": analytics.like_count,
-                    "comment_count": analytics.comment_count,
-                    "repost_count": analytics.repost_count,
-                    "save_count": analytics.save_count,
-                }
+                _completed_entry(
+                    job,
+                    now,
+                    view_count=analytics.view_count,
+                    like_count=analytics.like_count,
+                    comment_count=analytics.comment_count,
+                    repost_count=analytics.repost_count,
+                    save_count=analytics.save_count,
+                )
             )
+            collected_count += 1
 
             try:
                 notifier.notify_analytics(
@@ -146,19 +109,15 @@ def main() -> int:
                     f"recording with null values"
                 )
                 state["completed_analytics"].append(
-                    {
-                        "video_id": job["video_id"],
-                        "username": job["username"],
-                        "video_url": job["video_url"],
-                        "title": job["title"],
-                        "detected_at": job["detected_at"],
-                        "analytics_collected_at": now.isoformat(),
-                        "view_count": None,
-                        "like_count": None,
-                        "comment_count": None,
-                        "repost_count": None,
-                        "save_count": None,
-                    }
+                    _completed_entry(
+                        job,
+                        now,
+                        view_count=None,
+                        like_count=None,
+                        comment_count=None,
+                        repost_count=None,
+                        save_count=None,
+                    )
                 )
                 try:
                     notifier.notify_error(
@@ -166,32 +125,11 @@ def main() -> int:
                         f"失敗しました（{config.max_analytics_retries}回リトライ済み）。"
                         f"動画が削除された可能性があります。"
                     )
-                except Exception:
-                    pass
+                except Exception as e:
+                    logger.error(f"Slack error notification failed: {e}")
             else:
                 # Keep in pending for next attempt
                 still_pending.append(job)
 
     state["pending_analytics"] = still_pending
-
-    # Prune completed history
-    completed = state.get("completed_analytics", [])
-    if len(completed) > config.max_completed_history:
-        state["completed_analytics"] = completed[-config.max_completed_history:]
-
-    # Only save and commit persistent state if meaningfully changed
-    new_snapshot = serialize_state(state)
-    if has_meaningful_change(original_snapshot, new_snapshot):
-        save_state(state, config.state_file_path, config.max_completed_history)
-        try:
-            git_commit_and_push("Update state: analytics collected")
-        except subprocess.CalledProcessError as e:
-            logger.error(f"Git commit/push failed: {e}")
-    else:
-        logger.info("No pending analytics due; skipping commit")
-
-    return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+    return collected_count
