@@ -14,6 +14,10 @@ class Config:
     analytics_delay_hours: int = 24
     max_analytics_retries: int = 3
     max_completed_history: int = 200
+    # Consecutive extraction failures before alerting Slack. Runs land roughly
+    # every 1-1.5h (GitHub throttles the 5-minute cron), so 3 means the account
+    # has been failing for about 4 hours.
+    failure_alert_threshold: int = 3
 
 
 def load_config() -> Config:
