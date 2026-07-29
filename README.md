@@ -11,7 +11,7 @@ GitHub Actions を使って TikTok アカウントの新規投稿を自動検知
 
 ### 実行間隔について
 
-`monitor.yml` / `analytics.yml` の cron は 5 分ごと (`*/5`) を指定していますが、GitHub Actions のスケジュール実行はベストエフォートで、高頻度の指定ほど間引かれます。**実測では 1 日あたり 14〜17 回（約 1〜1.5 時間間隔）** しか起動しません。週次レポートも「月曜 0:00 UTC」指定に対し、実際の配信は同日の午前中にずれ込みます。
+`run.yml` の cron は 5 分ごと (`*/5`) を指定していますが、GitHub Actions のスケジュール実行はベストエフォートで、高頻度の指定ほど間引かれます。**実測では 1 日あたり 14〜17 回（約 1〜1.5 時間間隔）** しか起動しません。週次レポートも「月曜 0:00 UTC」指定に対し、実際の配信は同日の午前中にずれ込みます。
 
 投稿検知が数時間遅れても 24 時間後アナリティクスの精度には影響しないため、現状はこの間隔を許容しています。確実に短い間隔で回したい場合は、外部スケジューラから `workflow_dispatch` を叩く構成が必要です。
 
@@ -62,8 +62,7 @@ GitHub Actions を使って TikTok アカウントの新規投稿を自動検知
 .
 ├── .github/
 │   └── workflows/
-│       ├── monitor.yml        # 新規投稿検知ワークフロー（定期実行）
-│       ├── analytics.yml      # 24h アナリティクスワークフロー（定期実行）
+│       ├── run.yml            # 投稿検知＋アナリティクス収集（定期実行）
 │       ├── weekly-report.yml  # 週次レポートワークフロー（毎週月曜）
 │       └── test-slack.yml     # Slack 通知テスト（手動実行）
 ├── config/
@@ -71,15 +70,30 @@ GitHub Actions を使って TikTok アカウントの新規投稿を自動検知
 ├── data/
 │   └── state.json             # 既知の動画 ID・アナリティクスジョブ（git 管理）
 ├── src/
-│   ├── monitor.py             # 新規投稿検知エントリーポイント
-│   ├── analytics.py           # アナリティクス収集エントリーポイント
+│   ├── run.py                 # エントリーポイント（両フェーズを実行）
+│   ├── monitor.py             # 新規投稿検知フェーズ
+│   ├── analytics.py           # アナリティクス収集フェーズ
 │   ├── weekly_report.py       # 週次レポートエントリーポイント
 │   ├── tiktok_client.py       # yt-dlp ラッパー
 │   ├── slack_notifier.py      # Slack 通知クライアント
 │   ├── config.py              # 設定読み込み
-│   └── state_manager.py       # 状態管理
+│   ├── state_manager.py       # 状態の読み書き
+│   └── git_sync.py            # 状態のコミット＆プッシュ
 └── requirements.txt
 ```
+
+## 実行の流れ
+
+`run.py` が唯一のエントリーポイントで、1 回の実行で次を順に行います。
+
+1. `data/state.json` を読み込む
+2. **新規投稿の検知**（`monitor.check_new_posts`）— 新しい投稿を Slack へ通知し、24 時間後のアナリティクスジョブを登録する
+3. **アナリティクスの収集**（`analytics.collect_due_analytics`）— 期限が到来したジョブの指標を取得して Slack へ通知する
+4. 状態に変化があれば `state.json` を保存し、コミットして push する
+
+2 と 3 は同一プロセス内でひとつの状態オブジェクトを共有します。**`state.json` の書き手が常に 1 つだけ**になるため、両者が互いの変更を git push の競合で失うことがありません。以前は 2 本の独立したワークフローが同じファイルを更新しており、push に失敗した側の変更が失われて同じ動画を再通知する可能性がありました。
+
+どちらかのフェーズが例外で落ちても、もう一方がすでに状態へ書き込んだ内容は保存されます。その場合ワークフローは失敗として終了するので、Actions の画面で気付けます。
 
 ## 状態管理の仕組み
 
@@ -129,10 +143,14 @@ pip install -r requirements.txt
 
 export SLACK_WEBHOOK_URL="https://hooks.slack.com/services/..."
 
-python src/monitor.py
-python src/analytics.py
+# 投稿検知とアナリティクス収集（本番と同じ処理）
+python src/run.py
+
+# 週次レポート
 python src/weekly_report.py
 ```
+
+> **注意:** `run.py` は状態に変化があると `data/state.json` をコミットして push します。ローカルで試す場合は、意図しないコミットが発生しないよう作業ブランチを切ってから実行してください。
 
 ## ライセンス
 

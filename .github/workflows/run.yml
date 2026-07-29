@@ -1,4 +1,4 @@
-name: TikTok Monitor - New Post Detection
+name: TikTok Monitor
 
 on:
   schedule:
@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  monitor:
+  run:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -35,7 +35,7 @@ jobs:
       - name: Pull latest changes
         run: git pull --rebase origin main
 
-      - name: Run monitor
+      - name: Detect new posts and collect analytics
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-        run: python src/monitor.py
+        run: python src/run.py
