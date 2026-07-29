@@ -47,10 +47,27 @@ def load_state(path: str) -> State:
 
         state = json.loads(text)
 
-        # Ensure required top-level keys exist
-        for key in ("accounts", "pending_analytics", "completed_analytics"):
-            if key not in state:
-                state[key] = {} if key == "accounts" else []
+        if not isinstance(state, dict):
+            logger.warning(
+                "State file is not a JSON object; starting with empty state"
+            )
+            return _default_state()
+
+        # Ensure the required top-level keys exist AND hold the right type.
+        # Without the type check a malformed file (e.g. "accounts": []) parses
+        # cleanly and then crashes mid-run.
+        for key, expected in (
+            ("accounts", dict),
+            ("pending_analytics", list),
+            ("completed_analytics", list),
+        ):
+            if not isinstance(state.get(key), expected):
+                if key in state:
+                    logger.warning(
+                        f"State key {key!r} has unexpected type "
+                        f"{type(state[key]).__name__}; resetting it"
+                    )
+                state[key] = expected()
 
         return state
 

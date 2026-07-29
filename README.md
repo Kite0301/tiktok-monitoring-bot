@@ -64,6 +64,7 @@ GitHub Actions を使って TikTok アカウントの新規投稿を自動検知
 │   └── workflows/
 │       ├── run.yml            # 投稿検知＋アナリティクス収集（定期実行）
 │       ├── weekly-report.yml  # 週次レポートワークフロー（毎週月曜）
+│       ├── test.yml           # テスト（PR・main への push）
 │       └── test-slack.yml     # Slack 通知テスト（手動実行）
 ├── config/
 │   └── accounts.json          # 監視対象アカウント一覧
@@ -79,7 +80,9 @@ GitHub Actions を使って TikTok アカウントの新規投稿を自動検知
 │   ├── config.py              # 設定読み込み
 │   ├── state_manager.py       # 状態の読み書き
 │   └── git_sync.py            # 状態のコミット＆プッシュ
-└── requirements.txt
+├── tests/                     # pytest（外部依存はすべてスタブ）
+├── requirements.txt
+└── requirements-dev.txt
 ```
 
 ## 実行の流れ
@@ -161,6 +164,17 @@ python src/weekly_report.py
 ```
 
 > **注意:** `run.py` は状態に変化があると `data/state.json` をコミットして push します。ローカルで試す場合は、意図しないコミットが発生しないよう作業ブランチを切ってから実行してください。
+
+## テスト
+
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
+TikTok・Slack・git はすべてスタブに差し替えてあります。テスト実行時にネットワークアクセスは発生せず、実際の `data/state.json` も書き換わりません。PR と main への push で CI が自動実行されます（`data/` と Markdown のみの変更では実行されません）。
+
+既知のバグは `xfail` マーカーで追跡しています。修正されると「想定外に成功した」として CI が落ちるので、マーカーの外し忘れに気付けます。
 
 ## ライセンス
 
