@@ -56,8 +56,19 @@ class SlackNotifier:
         video_url: str,
         title: str,
         detected_at: str,
+        analytics_due_at: Optional[str] = None,
     ) -> None:
-        """Send a new post detection notification in Japanese."""
+        """Send a new post detection notification in Japanese.
+
+        analytics_due_at is the scheduled measurement time, or None when the
+        post was seen too late to be measured at the 24h mark.
+        """
+        if analytics_due_at:
+            analytics_note = f"分析データは {analytics_due_at} に取得します"
+        else:
+            analytics_note = (
+                "投稿から時間が経過しているため、分析データは取得しません"
+            )
         payload = {
             "text": f"\u65b0\u898f\u6295\u7a3f\u3092\u691c\u51fa: {username} - {title}",
             "blocks": [
@@ -101,7 +112,7 @@ class SlackNotifier:
                     "elements": [
                         {
                             "type": "mrkdwn",
-                            "text": "24\u6642\u9593\u5f8c\u306b\u5206\u6790\u30c7\u30fc\u30bf\u3092\u53d6\u5f97\u3057\u307e\u3059",
+                            "text": analytics_note,
                         }
                     ],
                 },
@@ -114,14 +125,25 @@ class SlackNotifier:
         username: str,
         video_url: str,
         title: str,
-        detected_at: str,
+        posted_at: str,
+        elapsed_hours: float,
         view_count: Optional[int],
         like_count: Optional[int],
         comment_count: Optional[int],
         repost_count: Optional[int],
         save_count: Optional[int],
+        posted_at_is_exact: bool = True,
     ) -> None:
-        """Send a 24h analytics notification in Japanese."""
+        """Send a 24h analytics notification in Japanese.
+
+        elapsed_hours is how long after posting the metrics were actually
+        read; it can exceed 24 when a scheduled run lands late. Showing it
+        keeps the number interpretable instead of silently mislabelled.
+        """
+        # Without a real post time the elapsed window is counted from
+        # detection, so say so rather than implying more accuracy than we have.
+        time_label = "投稿時刻" if posted_at_is_exact else "検出時刻（投稿時刻は不明）"
+        elapsed_from = "投稿" if posted_at_is_exact else "検出"
 
         def fmt(n: Optional[int]) -> str:
             if n is None:
@@ -148,7 +170,7 @@ class SlackNotifier:
                         },
                         {
                             "type": "mrkdwn",
-                            "text": f"*\u6295\u7a3f\u691c\u51fa\u6642\u523b:*\n{detected_at}",
+                            "text": f"*{time_label}:*\n{posted_at}",
                         },
                     ],
                 },
@@ -195,6 +217,15 @@ class SlackNotifier:
                         "type": "mrkdwn",
                         "text": f"<{video_url}|\u52d5\u753b\u3092\u898b\u308b>",
                     },
+                },
+                {
+                    "type": "context",
+                    "elements": [
+                        {
+                            "type": "mrkdwn",
+                            "text": f"{elapsed_from}\u304b\u3089 {elapsed_hours:.1f} \u6642\u9593\u5f8c\u306e\u6570\u5024\u3067\u3059",
+                        }
+                    ],
                 },
             ],
         }

@@ -12,6 +12,10 @@ class Config:
     slack_webhook_url: str
     state_file_path: str = "data/state.json"
     analytics_delay_hours: int = 24
+    # How late a measurement may be and still count as "24h performance".
+    # A post already past this window when first seen gets no analytics job,
+    # so that e.g. a 40h-old number never lands in the 24h dataset.
+    analytics_max_lateness_hours: int = 6
     max_analytics_retries: int = 3
     max_completed_history: int = 200
     # Consecutive extraction failures before alerting Slack. Runs land roughly

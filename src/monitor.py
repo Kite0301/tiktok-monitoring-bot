@@ -25,6 +25,19 @@ JST = timezone(timedelta(hours=9))
 logger = logging.getLogger(__name__)
 
 
+def _posted_at(video, fallback: datetime) -> tuple[datetime, bool]:
+    """Return the video's post time, falling back to the detection time.
+
+    yt-dlp exposes the real upload time for TikTok even in flat-playlist
+    mode, but it is not guaranteed to be present on every entry.
+
+    Returns (anchor, is_real_post_time).
+    """
+    if video.timestamp:
+        return datetime.fromtimestamp(video.timestamp, timezone.utc), True
+    return fallback, False
+
+
 def _get_account_state(state: State, username: str) -> dict:
     """Get or initialize persistent state for one account."""
     account = state["accounts"].setdefault(username, {})
@@ -126,20 +139,44 @@ def check_new_posts(
                     account["known_video_ids"].append(video.video_id)
                     new_post_count += 1
 
-                    analytics_due = now + timedelta(
+                    # Measure 24h from when the video was posted, not from
+                    # when we happened to notice it.
+                    anchor, has_post_time = _posted_at(video, now)
+                    due = anchor + timedelta(
                         hours=config.analytics_delay_hours
                     )
-                    state["pending_analytics"].append(
-                        {
-                            "video_id": video.video_id,
-                            "username": username,
-                            "video_url": video.url,
-                            "detected_at": now.isoformat(),
-                            "analytics_due_at": analytics_due.isoformat(),
-                            "title": video.title,
-                            "retry_count": 0,
-                        }
+                    deadline = due + timedelta(
+                        hours=config.analytics_max_lateness_hours
                     )
+
+                    if now <= deadline:
+                        state["pending_analytics"].append(
+                            {
+                                "video_id": video.video_id,
+                                "username": username,
+                                "video_url": video.url,
+                                "posted_at": (
+                                    anchor.isoformat() if has_post_time else None
+                                ),
+                                "detected_at": now.isoformat(),
+                                "analytics_due_at": due.isoformat(),
+                                "title": video.title,
+                                "retry_count": 0,
+                            }
+                        )
+                        due_label = due.astimezone(JST).strftime(
+                            "%Y-%m-%d %H:%M JST"
+                        )
+                    else:
+                        # Seen too late for the number to mean "24h
+                        # performance" -- keep it out of the dataset.
+                        age_hours = (now - anchor).total_seconds() / 3600
+                        logger.info(
+                            f"Skipping analytics for {video.video_id}: "
+                            f"posted {age_hours:.1f}h ago, past the "
+                            f"{config.analytics_delay_hours}h window"
+                        )
+                        due_label = None
 
                     try:
                         notifier.notify_new_post(
@@ -148,6 +185,7 @@ def check_new_posts(
                             video_url=video.url,
                             title=video.title,
                             detected_at=now.astimezone(JST).strftime("%Y-%m-%d %H:%M JST"),
+                            analytics_due_at=due_label,
                         )
                     except Exception as e:
                         logger.error(f"Slack notification failed: {e}")
