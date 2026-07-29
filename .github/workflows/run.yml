@@ -2,7 +2,15 @@ name: TikTok Monitor
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    # Hourly. */5 asked for 288 runs a day and only got 14-17, so asking once
+    # an hour should land closer to what we ask for.
+    #
+    # :07 because 82% of the monitored accounts' posts go up exactly on the
+    # hour -- checking early in the hour is what keeps detection lag small.
+    # Not :00 itself: GitHub documents the top of the hour as a high-load
+    # period for the scheduler. The odd minute also makes the delay
+    # measurable, since every run's requested time is unambiguous.
+    - cron: '7 * * * *'
   workflow_dispatch:
 
 concurrency:
