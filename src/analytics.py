@@ -20,21 +20,37 @@ JST = timezone(timedelta(hours=9))
 logger = logging.getLogger(__name__)
 
 
-def _format_detected_at_jst(iso_str: str) -> str:
+def _format_jst(iso_str: str) -> str:
     """Convert an ISO 8601 UTC timestamp to JST display string."""
     dt = datetime.fromisoformat(iso_str)
     return dt.astimezone(JST).strftime("%Y-%m-%d %H:%M JST")
 
 
+def _anchor_iso(job: dict) -> str:
+    """The timestamp the measurement window is counted from.
+
+    Jobs registered before posted_at existed, and jobs whose post time
+    yt-dlp did not expose, fall back to the detection time.
+    """
+    return job.get("posted_at") or job["detected_at"]
+
+
 def _completed_entry(job: dict, now: datetime, **metrics) -> dict:
-    """Build a completed_analytics record for a job."""
+    """Build a completed_analytics record for a job.
+
+    Records how long after posting the metrics were actually read, so that
+    a late run produces an honest number rather than a mislabelled one.
+    """
+    anchor = datetime.fromisoformat(_anchor_iso(job))
     return {
         "video_id": job["video_id"],
         "username": job["username"],
         "video_url": job["video_url"],
         "title": job["title"],
+        "posted_at": job.get("posted_at"),
         "detected_at": job["detected_at"],
         "analytics_collected_at": now.isoformat(),
+        "elapsed_hours": round((now - anchor).total_seconds() / 3600, 2),
         **metrics,
     }
 
@@ -69,17 +85,16 @@ def collect_due_analytics(
         try:
             analytics = client.get_video_analytics(job["video_url"])
 
-            state["completed_analytics"].append(
-                _completed_entry(
-                    job,
-                    now,
-                    view_count=analytics.view_count,
-                    like_count=analytics.like_count,
-                    comment_count=analytics.comment_count,
-                    repost_count=analytics.repost_count,
-                    save_count=analytics.save_count,
-                )
+            entry = _completed_entry(
+                job,
+                now,
+                view_count=analytics.view_count,
+                like_count=analytics.like_count,
+                comment_count=analytics.comment_count,
+                repost_count=analytics.repost_count,
+                save_count=analytics.save_count,
             )
+            state["completed_analytics"].append(entry)
             collected_count += 1
 
             try:
@@ -87,7 +102,9 @@ def collect_due_analytics(
                     username=job["username"],
                     video_url=job["video_url"],
                     title=job["title"],
-                    detected_at=_format_detected_at_jst(job["detected_at"]),
+                    posted_at=_format_jst(_anchor_iso(job)),
+                    posted_at_is_exact=bool(job.get("posted_at")),
+                    elapsed_hours=entry["elapsed_hours"],
                     view_count=analytics.view_count,
                     like_count=analytics.like_count,
                     comment_count=analytics.comment_count,
