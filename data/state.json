@@ -42,7 +42,8 @@
         "7652265470728424724",
         "7674604856333569301",
         "7674606597309517076",
-        "7674607810679704852"
+        "7674607810679704852",
+        "7675020950940994836"
       ]
     },
     "@naokijiro": {
@@ -140,16 +141,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7674604856333569301",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7674604856333569301",
-      "posted_at": "2026-08-16T22:00:00+00:00",
-      "detected_at": "2026-08-16T22:15:10.586458+00:00",
-      "analytics_due_at": "2026-08-17T22:00:00+00:00",
-      "title": "ティラミス 名前の意味 知ってる？🇮🇹 #世界グルメ #イタリア #グルメ #食べたい #うまいもん図鑑",
-      "retry_count": 0
-    },
-    {
       "video_id": "7674606597309517076",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7674606597309517076",
@@ -167,6 +158,16 @@
       "detected_at": "2026-08-17T10:17:49.822602+00:00",
       "analytics_due_at": "2026-08-18T10:00:00+00:00",
       "title": "ハワイアンピザ ハワイと無関係って知ってる？🇨🇦 #世界グルメ #カナダ #グルメ #食べたい #うまいもん図鑑",
+      "retry_count": 0
+    },
+    {
+      "video_id": "7675020950940994836",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675020950940994836",
+      "posted_at": "2026-08-17T22:00:00+00:00",
+      "detected_at": "2026-08-17T22:15:53.667889+00:00",
+      "analytics_due_at": "2026-08-18T22:00:00+00:00",
+      "title": "このピザ 王妃様の名前です🇮🇹 #世界グルメ #イタリア #グルメ #食べたい #うまいもん図鑑",
       "retry_count": 0
     }
   ],
@@ -1704,6 +1705,21 @@
       "comment_count": 0,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7674604856333569301",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7674604856333569301",
+      "title": "ティラミス 名前の意味 知ってる？🇮🇹 #世界グルメ #イタリア #グルメ #食べたい #うまいもん図鑑",
+      "posted_at": "2026-08-16T22:00:00+00:00",
+      "detected_at": "2026-08-16T22:15:10.586458+00:00",
+      "analytics_collected_at": "2026-08-17T22:15:53.667889+00:00",
+      "elapsed_hours": 24.26,
+      "view_count": 895,
+      "like_count": 12,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
