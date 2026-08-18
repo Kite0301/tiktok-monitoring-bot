@@ -143,16 +143,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7675020950940994836",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675020950940994836",
-      "posted_at": "2026-08-17T22:00:00+00:00",
-      "detected_at": "2026-08-17T22:15:53.667889+00:00",
-      "analytics_due_at": "2026-08-18T22:00:00+00:00",
-      "title": "このピザ 王妃様の名前です🇮🇹 #世界グルメ #イタリア #グルメ #食べたい #うまいもん図鑑",
-      "retry_count": 0
-    },
-    {
       "video_id": "7675025482517155092",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675025482517155092",
@@ -1750,6 +1740,21 @@
       "view_count": 174,
       "like_count": 0,
       "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 0
+    },
+    {
+      "video_id": "7675020950940994836",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675020950940994836",
+      "title": "このピザ 王妃様の名前です🇮🇹 #世界グルメ #イタリア #グルメ #食べたい #うまいもん図鑑",
+      "posted_at": "2026-08-17T22:00:00+00:00",
+      "detected_at": "2026-08-17T22:15:53.667889+00:00",
+      "analytics_collected_at": "2026-08-18T22:15:56.235291+00:00",
+      "elapsed_hours": 24.27,
+      "view_count": 306,
+      "like_count": 3,
+      "comment_count": 1,
       "repost_count": 0,
       "save_count": 0
     }
