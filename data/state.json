@@ -47,7 +47,8 @@
         "7675025482517155092",
         "7675026128251211029"
       ],
-      "consecutive_failures": 2
+      "consecutive_failures": 3,
+      "failure_notified": true
     },
     "@naokijiro": {
       "known_video_ids": [
@@ -69,7 +70,8 @@
         "7635177868019944725",
         "7638268360182025493"
       ],
-      "consecutive_failures": 2
+      "consecutive_failures": 3,
+      "failure_notified": true
     },
     "@monom_fan": {
       "known_video_ids": [
@@ -141,7 +143,8 @@
         "7657091993411128597",
         "7658228730627755271"
       ],
-      "consecutive_failures": 2
+      "consecutive_failures": 3,
+      "failure_notified": true
     }
   },
   "pending_analytics": [
