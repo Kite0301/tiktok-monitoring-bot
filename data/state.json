@@ -149,16 +149,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7675025482517155092",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675025482517155092",
-      "posted_at": "2026-08-18T03:00:00+00:00",
-      "detected_at": "2026-08-18T03:25:29.328443+00:00",
-      "analytics_due_at": "2026-08-19T03:00:00+00:00",
-      "title": "アサイーボウル 本場では魚にかけます🇧🇷 #世界グルメ #ブラジル #グルメ #食べたい #うまいもん図鑑",
-      "retry_count": 2
-    },
-    {
       "video_id": "7675026128251211029",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675026128251211029",
@@ -1763,6 +1753,21 @@
       "comment_count": 1,
       "repost_count": 0,
       "save_count": 0
+    },
+    {
+      "video_id": "7675025482517155092",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675025482517155092",
+      "title": "アサイーボウル 本場では魚にかけます🇧🇷 #世界グルメ #ブラジル #グルメ #食べたい #うまいもん図鑑",
+      "posted_at": "2026-08-18T03:00:00+00:00",
+      "detected_at": "2026-08-18T03:25:29.328443+00:00",
+      "analytics_collected_at": "2026-08-19T05:17:18.239860+00:00",
+      "elapsed_hours": 26.29,
+      "view_count": null,
+      "like_count": null,
+      "comment_count": null,
+      "repost_count": null,
+      "save_count": null
     }
   ]
 }
