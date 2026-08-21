@@ -145,16 +145,6 @@
   },
   "pending_analytics": [
     {
-      "video_id": "7675900635983645972",
-      "username": "@kt.umaimon",
-      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675900635983645972",
-      "posted_at": "2026-08-20T03:00:00+00:00",
-      "detected_at": "2026-08-20T03:26:40.455577+00:00",
-      "analytics_due_at": "2026-08-21T03:00:00+00:00",
-      "title": "本場のカルボナーラ 生クリーム入れません🇮🇹 #世界グルメ #イタリア #グルメ #食べたい #うまいもん図鑑",
-      "retry_count": 0
-    },
-    {
       "video_id": "7675901643598122261",
       "username": "@kt.umaimon",
       "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675901643598122261",
@@ -1789,6 +1779,21 @@
       "comment_count": null,
       "repost_count": null,
       "save_count": null
+    },
+    {
+      "video_id": "7675900635983645972",
+      "username": "@kt.umaimon",
+      "video_url": "https://www.tiktok.com/@kt.umaimon/video/7675900635983645972",
+      "title": "本場のカルボナーラ 生クリーム入れません🇮🇹 #世界グルメ #イタリア #グルメ #食べたい #うまいもん図鑑",
+      "posted_at": "2026-08-20T03:00:00+00:00",
+      "detected_at": "2026-08-20T03:26:40.455577+00:00",
+      "analytics_collected_at": "2026-08-21T03:29:30.012935+00:00",
+      "elapsed_hours": 24.49,
+      "view_count": 963,
+      "like_count": 8,
+      "comment_count": 0,
+      "repost_count": 0,
+      "save_count": 1
     }
   ]
 }
