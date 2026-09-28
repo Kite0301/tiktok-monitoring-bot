@@ -4,8 +4,8 @@ from conftest import StubClient, analytics_result, pending_job
 from tiktok_client import TikTokClientError
 
 
-def test_due_job_is_collected_and_notified(write_state, run_cycle):
-    write_state(pending=[pending_job("v1", posted_hours_ago=24)])
+def test_due_job_is_collected_and_notified(write_account, run_cycle):
+    write_account(known=["v1"], pending=[pending_job("v1", posted_hours_ago=24)])
     result = run_cycle(StubClient(analytics=analytics_result()))
 
     assert result.pending == []
@@ -16,11 +16,8 @@ def test_due_job_is_collected_and_notified(write_state, run_cycle):
     assert result.commits == ["Update state: 1 analytics"]
 
 
-def test_job_that_is_not_due_yet_is_left_alone(write_state, run_cycle):
-    write_state(
-        accounts={"@acct": {"known_video_ids": ["v1"]}},
-        pending=[pending_job("v1", due_hours_ago=-5)],
-    )
+def test_job_that_is_not_due_yet_is_left_alone(write_account, run_cycle):
+    write_account(known=["v1"], pending=[pending_job("v1", due_hours_ago=-5)])
     result = run_cycle()
 
     assert len(result.pending) == 1
@@ -29,9 +26,10 @@ def test_job_that_is_not_due_yet_is_left_alone(write_state, run_cycle):
     assert result.notifier.calls == []
 
 
-def test_elapsed_time_is_recorded_from_the_post_time(write_state, run_cycle):
-    write_state(
-        pending=[pending_job("v1", posted_hours_ago=26, detected_hours_ago=2)]
+def test_elapsed_time_is_recorded_from_the_post_time(write_account, run_cycle):
+    write_account(
+        known=["v1"],
+        pending=[pending_job("v1", posted_hours_ago=26, detected_hours_ago=2)],
     )
     result = run_cycle(StubClient(analytics=analytics_result()))
 
@@ -44,9 +42,9 @@ def test_elapsed_time_is_recorded_from_the_post_time(write_state, run_cycle):
     assert note["posted_at_is_exact"] is True
 
 
-def test_job_without_post_time_falls_back_to_detection(write_state, run_cycle):
+def test_job_without_post_time_falls_back_to_detection(write_account, run_cycle):
     """Jobs registered before post-time anchoring carry no posted_at."""
-    write_state(pending=[pending_job("v1", detected_hours_ago=24)])
+    write_account(known=["v1"], pending=[pending_job("v1", detected_hours_ago=24)])
     result = run_cycle(StubClient(analytics=analytics_result()))
 
     entry = result.completed[0]
@@ -55,8 +53,8 @@ def test_job_without_post_time_falls_back_to_detection(write_state, run_cycle):
     assert result.notifier.only("analytics")["posted_at_is_exact"] is False
 
 
-def test_failed_collection_is_retried_not_dropped(write_state, run_cycle):
-    write_state(pending=[pending_job("v1", posted_hours_ago=24)])
+def test_failed_collection_is_retried_not_dropped(write_account, run_cycle):
+    write_account(known=["v1"], pending=[pending_job("v1", posted_hours_ago=24)])
     result = run_cycle(StubClient(analytics=TikTokClientError("unavailable")))
 
     assert result.exit_code == 0
@@ -66,9 +64,10 @@ def test_failed_collection_is_retried_not_dropped(write_state, run_cycle):
     assert result.notifier.calls == []
 
 
-def test_exhausted_retries_record_nulls_and_alert(write_state, run_cycle):
-    write_state(
-        pending=[pending_job("v1", posted_hours_ago=24, retry_count=2)]
+def test_exhausted_retries_record_nulls_and_alert(write_account, run_cycle):
+    write_account(
+        known=["v1"],
+        pending=[pending_job("v1", posted_hours_ago=24, retry_count=2)],
     )
     result = run_cycle(
         StubClient(analytics=TikTokClientError("video removed")),
@@ -82,10 +81,10 @@ def test_exhausted_retries_record_nulls_and_alert(write_state, run_cycle):
     assert "v1" in result.notifier.only("error")["message"]
 
 
-def test_slack_failure_does_not_lose_collected_metrics(write_state, run_cycle):
+def test_slack_failure_does_not_lose_collected_metrics(write_account, run_cycle):
     from conftest import RecordingNotifier
 
-    write_state(pending=[pending_job("v1", posted_hours_ago=24)])
+    write_account(known=["v1"], pending=[pending_job("v1", posted_hours_ago=24)])
     result = run_cycle(
         StubClient(analytics=analytics_result()),
         notifier=RecordingNotifier(fail_on={"analytics"}),
@@ -95,8 +94,9 @@ def test_slack_failure_does_not_lose_collected_metrics(write_state, run_cycle):
     assert len(result.completed) == 1
 
 
-def test_multiple_due_jobs_are_all_collected(write_state, run_cycle):
-    write_state(
+def test_multiple_due_jobs_are_all_collected(write_account, run_cycle):
+    write_account(
+        known=["v1"],
         pending=[
             pending_job("v1", posted_hours_ago=24),
             pending_job("v2", posted_hours_ago=25),
