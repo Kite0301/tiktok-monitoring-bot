@@ -1,7 +1,8 @@
 {
   "accounts": [
-    "@kt.umaimon",
-    "@naokijiro",
-    "@monom_fan"
+    { "username": "@kt.umaimon" },
+    { "username": "@naokijiro" },
+    { "username": "@monom_fan" },
+    { "username": "@isan_concierge", "notify": false }
   ]
 }

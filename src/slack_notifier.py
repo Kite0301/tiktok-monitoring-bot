@@ -19,6 +19,41 @@ def _truncate(text: str) -> str:
     return text[:_MAX_DETAIL_CHARS] + " …(以下省略)"
 
 
+class AccountNotifier:
+    """Applies one account's notify flag to the notifications it sends.
+
+    The line is drawn between what the account posted and whether the bot is
+    still working:
+
+    - content (new post, analytics result, a video we gave up collecting)
+      is silenced for a collect-only account
+    - health (repeated extraction failure, recovery) is always sent, so a
+      silent account cannot quietly stop collecting
+    """
+
+    def __init__(self, notifier: "SlackNotifier", notify: bool) -> None:
+        self._notifier = notifier
+        self._notify = notify
+
+    def notify_new_post(self, **kwargs) -> None:
+        if self._notify:
+            self._notifier.notify_new_post(**kwargs)
+
+    def notify_analytics(self, **kwargs) -> None:
+        if self._notify:
+            self._notifier.notify_analytics(**kwargs)
+
+    def notify_error(self, message: str) -> None:
+        if self._notify:
+            self._notifier.notify_error(message)
+
+    def notify_account_failure(self, **kwargs) -> None:
+        self._notifier.notify_account_failure(**kwargs)
+
+    def notify_account_recovery(self, username: str) -> None:
+        self._notifier.notify_account_recovery(username)
+
+
 class SlackNotificationError(Exception):
     """Raised when a Slack notification fails."""
 

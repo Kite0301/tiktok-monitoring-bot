@@ -1,18 +1,17 @@
 """24-hour analytics collection.
 
-Checks pending_analytics for due items, collects metrics via yt-dlp, and
-sends Slack notifications with the results.
+Collects metrics for one account's pending jobs whose 24h window has
+elapsed, and sends Slack notifications with the results.
 
-Mutates the state dict in place. Loading, saving and committing the state
-is run.py's responsibility, so that a single run writes it exactly once.
+Mutates the account's state dict in place. Loading, saving and committing
+it is run.py's responsibility.
 """
 
 import logging
 from datetime import datetime, timedelta, timezone
 
-from config import Config
-from slack_notifier import SlackNotifier
-from state_manager import State
+from account_store import AccountState
+from config import Account, Config
 from tiktok_client import TikTokClient, TikTokClientError
 
 JST = timezone(timedelta(hours=9))
@@ -56,13 +55,14 @@ def _completed_entry(job: dict, now: datetime, **metrics) -> dict:
 
 
 def collect_due_analytics(
-    state: State,
+    account: Account,
+    state: AccountState,
     config: Config,
-    notifier: SlackNotifier,
+    notifier,
     client: TikTokClient,
     now: datetime,
 ) -> int:
-    """Collect metrics for every pending job whose 24h window has elapsed.
+    """Collect metrics for this account's jobs whose 24h window has elapsed.
 
     Returns the number of jobs whose metrics were successfully collected.
     Jobs that fail are retried on later runs until max_analytics_retries,
