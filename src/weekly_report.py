@@ -36,7 +36,9 @@ def main() -> int:
     notifier = SlackNotifier(config.slack_webhook_url)
 
     try:
-        notifier.notify_weekly_report(config.accounts)
+        notifier.notify_weekly_report(
+            [a.username for a in config.accounts]
+        )
         logger.info("Weekly report sent successfully")
     except Exception as e:
         logger.error(f"Failed to send weekly report: {e}")

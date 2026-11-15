@@ -7,14 +7,17 @@ reaches the network and never touches the real data/state.json.
 import json
 from dataclasses import dataclass
 from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
 import pytest
 
 import run as run_module
-from config import Config
+from account_store import account_path
+from config import Account, Config
 from tiktok_client import VideoAnalytics, VideoSummary
 
 UTC = timezone.utc
+ACCOUNT = "@acct"
 
 
 class RecordingNotifier:
@@ -145,26 +148,32 @@ def pending_job(video_id="v1", *, username="@acct", posted_hours_ago=None,
 
 
 @pytest.fixture
-def state_path(tmp_path):
+def data_dir(tmp_path):
+    return tmp_path / "accounts"
+
+
+@pytest.fixture
+def legacy_state_path(tmp_path):
+    """Where the retired single state.json would live."""
     return tmp_path / "state.json"
 
 
 @pytest.fixture
-def write_state(state_path):
-    """Write a state file for the run under test."""
+def write_account(data_dir):
+    """Write one account's data file for the run under test."""
 
-    def _write(*, accounts=None, pending=(), completed=()):
-        state_path.write_text(
-            json.dumps(
-                {
-                    "version": 1,
-                    "accounts": {} if accounts is None else accounts,
-                    "pending_analytics": list(pending),
-                    "completed_analytics": list(completed),
-                },
-                ensure_ascii=False,
-            ),
-            encoding="utf-8",
+    def _write(username=ACCOUNT, *, known=(), pending=(), completed=(), **extra):
+        data_dir.mkdir(parents=True, exist_ok=True)
+        state = {
+            "version": 1,
+            "username": username,
+            "known_video_ids": list(known),
+            "pending_analytics": list(pending),
+            "completed_analytics": list(completed),
+            **extra,
+        }
+        Path(account_path(str(data_dir), username)).write_text(
+            json.dumps(state, ensure_ascii=False), encoding="utf-8"
         )
 
     return _write
@@ -175,24 +184,36 @@ class CycleResult:
     """What one run of the bot did."""
 
     exit_code: int
-    state: dict
+    accounts: dict[str, dict]
     notifier: RecordingNotifier
     commits: list[str]
 
-    def account(self, username="@acct") -> dict:
-        return self.state["accounts"][username]
+    def account(self, username=ACCOUNT) -> dict:
+        return self.accounts[username]
+
+    def stored(self, username=ACCOUNT) -> bool:
+        return username in self.accounts
+
+    @property
+    def known(self) -> list[str]:
+        return self.account()["known_video_ids"]
 
     @property
     def pending(self) -> list[dict]:
-        return self.state["pending_analytics"]
+        return self.account()["pending_analytics"]
 
     @property
     def completed(self) -> list[dict]:
-        return self.state["completed_analytics"]
+        return self.account()["completed_analytics"]
+
+
+def as_accounts(entries) -> list[Account]:
+    """Accept "@name" or Account in test config overrides."""
+    return [e if isinstance(e, Account) else Account(e) for e in entries]
 
 
 @pytest.fixture
-def run_cycle(monkeypatch, state_path):
+def run_cycle(monkeypatch, data_dir, legacy_state_path):
     """Run one full run.main() cycle with every external dependency stubbed."""
 
     def _run(client=None, *, notifier=None, push_error=None, **config_kwargs):
@@ -206,9 +227,10 @@ def run_cycle(monkeypatch, state_path):
             commits.append(message)
 
         config = Config(
-            accounts=config_kwargs.pop("accounts", ["@acct"]),
+            accounts=as_accounts(config_kwargs.pop("accounts", [ACCOUNT])),
             slack_webhook_url="https://slack.test/hook",
-            state_file_path=str(state_path),
+            data_dir=str(data_dir),
+            legacy_state_file_path=str(legacy_state_path),
             **config_kwargs,
         )
 
@@ -219,9 +241,11 @@ def run_cycle(monkeypatch, state_path):
 
         exit_code = run_module.main()
 
-        state = {}
-        if state_path.exists():
-            state = json.loads(state_path.read_text(encoding="utf-8"))
-        return CycleResult(exit_code, state, notifier, commits)
+        stored = {}
+        if data_dir.exists():
+            for path in sorted(data_dir.glob("*.json")):
+                state = json.loads(path.read_text(encoding="utf-8"))
+                stored[state["username"]] = state
+        return CycleResult(exit_code, stored, notifier, commits)
 
     return _run
